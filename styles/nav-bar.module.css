@@ -1,24 +1,22 @@
 .tags  {
     flex-direction: row;
-    justify-content: center;
-    align-content: center;
     display: flex;
-    margin: 30px;
+    margin-top: 0;
+    background-color: white;
+    overflow: hidden;
 }
 
 .tags a{
     display: block;
-    color: #E30B5C;
-    margin: 0 20px;
-    border-radius: 7px;
+    color: black;
+    margin: 20px;
     padding: 4px;
+    text-align: center;
     text-decoration: none;
     transition: all 250ms ease-in-out;
 }
 
 .tags a:hover{
-    background-color: #E30B5C;
-    color: #282c34;
+    color: #696969;
     transform: scale(1.1);
-    box-shadow: 0 0 10px black;
 }
