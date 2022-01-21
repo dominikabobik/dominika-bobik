@@ -12,7 +12,8 @@ const Home: NextPage<PageProps> = () => {
     <title>Dominika Bobik</title>
     <NavBar/>
     <div className={styles.header}>
-      <h2>Dominika Bobik</h2>
+      <p className={styles.nameheader}>Dominika Bobik</p>
+      <img src={'/wroclaw.jpeg'} alt={"logo"} className={styles.phototop}/>
     </div>
     <div className={styles.box}>
       <div className={styles.photobox}>
@@ -32,7 +33,15 @@ const Home: NextPage<PageProps> = () => {
         <p>Bachelor of Science in Computer Engineering (2023)</p>
       </div>
       <div className={styles.mtulogo}>
-        <img src={'/mtu.png'} alt="logo" className={styles.photo}/>
+        <img src={'/mtu.png'} alt="logo" className={styles.mtulogo}/>
+      </div>
+    </div>
+    <div className={styles.box}>
+      <div className={styles.photobox}>
+        <img src={'/mtutennis.png'} alt="logo" className={styles.photo}/>
+      </div>
+      <div className={styles.textbox}>
+        <b>Student-athlete on the Michigan Tech Tennis Team!</b>
       </div>
     </div>
     <div className={styles.contact}>
