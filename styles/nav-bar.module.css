@@ -23,3 +23,25 @@
     color: #696969;
     transform: scale(1.1);
 }
+
+.links {
+    flex-direction: row;
+    display: flex;
+    margin-top: 0;
+    background-color: white;
+    margin-left: auto;
+}
+
+.links a {
+    color: black;
+    display: block;
+    margin: 20px;
+    padding: 4px;
+    text-decoration: none;
+    transition: all 250ms ease-in-out;
+}
+
+.links a:hover{
+    color: #696969;
+    transform: scale(1.1);
+}

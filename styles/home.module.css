@@ -1,44 +1,23 @@
-.content {
-  margin: 20px;
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.contact {
+.box{
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
-  text-align: center;
-  margin-top: 100px;
+  align-items: center;
+  flex-grow: 1;
 }
 
-.links {
-  flex-direction: row;
-  display: flex;
-  margin-top: 0;
-  background-color: white;
-  overflow: hidden;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-}
-
-.links a {
-  color: black;
-  display: block;
-  margin: 20px;
-  padding: 4px;
-  text-decoration: none;
-  transition: all 250ms ease-in-out;
-}
-
-.links a:hover{
-  color: #696969;
-  transform: scale(1.1);
-}
-
-.text p {
-  color: red;
-  text-align: center;
+@media (min-width: 720px) {
+  .box {
+    flex-direction: row;
+  }
 }
 
 .textbox {
@@ -49,75 +28,15 @@
   font-size: 18px;
   text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.photobox {
+.imagebox {
   margin: 10px 40px 10px 40px;
   width:20%;
 }
 
-.box{
-  background: white;
-  display: flex;
-  flex-direction: row;
-  margin: 70px 20px 20px 20px;
-  justify-content: center;
-}
-
-.photo {
+.image {
   width:100%;
   height:100%;
   object-fit: cover;
-}
-
-.mtulogo {
-  width:100%;
-  height:100%;
-  object-fit: cover;
-}
-
-.mtutextbox {
-  width:70%;
-  background-color: transparent;
-  align-items: center;
-  color: black;
-}
-
-.mtubox{
-  background: white;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin: 20px;
-  height: 100px;
-  padding: 10px;
-}
-
-.mtulogo {
-  width: 30%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.phototop{
-  object-fit: cover;
-  margin-top: 70px;
-  width: 100%;
-}
-
-.nameheader {
-  font-size: 40px;
-  color: black;
-}
-
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  width: 100%;
 }
