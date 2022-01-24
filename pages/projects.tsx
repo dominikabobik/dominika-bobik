@@ -15,6 +15,7 @@ const Projects: NextPage<PageProps> = () => {
             <h2>Resistor Color Decoder</h2>
             <p>Made a web app that finds color code based on the resistance of the basic circuit component.</p>
             <p>Technologies: TypeScript, React Native, Expo</p>
+            <img src={'/crk.png'} alt={"logo"} className={styles.crk}/>
             <h2>Tic Tac Toe</h2>
             <p>Created a console-run tic tac toe game for 2 players using C++.</p>
             <h2>Travel App</h2>
@@ -27,6 +28,7 @@ const Projects: NextPage<PageProps> = () => {
             <p>Wrote an android application in Java that performs 12 distinct mathematical operations. Designed a scalable, vertical
                 layout that is more suitable than the default one.</p>
             <p>Technologies: Android Studio, Java</p>
+            <img src={'/calculator.jpg'} alt="logo" className={styles.calculator}/>
             <h2>Blue Marble Security Enterprise</h2>
             <p>Worked on a team of software engineering students focusing on implementing autonomous pathfinding into a testing
                 robot using the Robot Operating System (ROS) written in C++ and Python.</p>

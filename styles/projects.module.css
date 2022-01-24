@@ -1,5 +1,5 @@
 .contents{
-    margin: 20px;
+    margin: 70px 20px 20px 20px;
 }
 
 .snowflake {
@@ -7,7 +7,15 @@
     width: 300px;
 }
 
+.calculator {
+    width: 200px;
+}
+
 .images {
     height:300px;
     width: 300px;
+}
+
+.crk {
+    width: 400px;
 }

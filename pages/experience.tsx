@@ -32,6 +32,14 @@ const Experience: NextPage = () => {
                 <i>“Mechanical Stimulation of Cardiomyocytes Seeded on the Carbon Nanotube ForestScaffold for Producing Mature and Functional Cells”</i>
                 <p>Using Siemens NX designed a custom device that provided dual electrical and mechanical stimuli to the cells.</p>
             <h1>
+                Achievements
+            </h1>
+                <h4>Electrical and Computer Engineering Undergraduate Advisory Board</h4>
+                <h4>Dean's List</h4>
+                <h4>GLIAC Freshman of the Year - 2019</h4>
+                <h4>GLIAC First Team All Conference - 2019</h4>
+                <h4>GLIAC Second Team All Conference - 2020</h4>
+            <h1>
                 Part-time Employment
             </h1>
                 <h4>Learning Center Coach - Electrical and Computer Engineering</h4>

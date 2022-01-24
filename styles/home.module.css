@@ -8,6 +8,7 @@
   justify-content: center;
   align-content: center;
   text-align: center;
+  margin-top: 100px;
 }
 
 .links {
@@ -44,20 +45,25 @@
   margin: 20px 20px 20px 0;
   width:60%;
   background-color: white;
-  align-items: center;
   color: black;
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .photobox {
-  padding: 20px;
-  width:40%;
+  margin: 10px 40px 10px 40px;
+  width:20%;
 }
 
 .box{
   background: white;
   display: flex;
   flex-direction: row;
-  margin: 20px;
+  margin: 70px 20px 20px 20px;
+  justify-content: center;
 }
 
 .photo {
@@ -87,16 +93,12 @@
   justify-content: center;
   margin: 20px;
   height: 100px;
-  border-style: solid;
-  border-radius: 10px;
-  border-color: black;
-  border-width: 5px;
   padding: 10px;
 }
 
 .mtulogo {
   width: 30%;
-  height: fit-content;
+  height: 100%;
   object-fit: contain;
 }
 
@@ -108,11 +110,7 @@
 
 .nameheader {
   font-size: 40px;
-  color: white;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  color: black;
 }
 
 .header {
