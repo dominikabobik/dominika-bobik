@@ -36,7 +36,7 @@ const Experience: NextPage = () => {
                     Achievements
                 </h1>
                 <h4>Electrical and Computer Engineering Undergraduate Advisory Board</h4>
-                <h4>Dean's List</h4>
+                <h4>Dean$apos;s List</h4>
                 <h4>GLIAC Freshman of the Year - 2019</h4>
                 <h4>GLIAC First Team All Conference - 2019</h4>
                 <h4>GLIAC Second Team All Conference - 2020</h4>
