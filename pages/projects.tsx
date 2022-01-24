@@ -8,7 +8,7 @@ interface PageProps {
 
 const Projects: NextPage<PageProps> = () => {
     return (
-        <div>
+        <div className={styles.main}>
             <NavBar/>
             <title>Dominika Bobik</title>
                 <div className={styles.wrapper}>

@@ -18,11 +18,9 @@ const Home: NextPage<PageProps> = () => {
         </div>
         <div className={styles.textbox}>
           <p>
-            My name is Dominika. My hometown is Wroclaw, Poland, a city of about half a million people in the south-west part of the country.
-            I currently live in Houghton, Michigan in the United States, where I moved to pursue a Bachelor of Science degree in Computer Engineering.
-            I take a great pride in representing Michigan Tech as a student-athlete on the Women$apos;s Tennis Team.
-            <p> Go Huskies!</p>
+            {"My name is Dominika. My hometown is Wroclaw, Poland, a city of about half a million people in the south-west part of the country. I currently live in Houghton, Michigan in the United States, where I moved to pursue a Bachelor of Science degree in Computer Engineering. I take a great pride in representing Michigan Tech as a student-athlete on the Women's Tennis Team."}
           </p>
+          <p> Go Huskies!</p>
         </div>
       </div>
     </div>
