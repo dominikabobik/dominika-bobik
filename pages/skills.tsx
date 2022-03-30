@@ -1,8 +1,43 @@
 import styles from '../styles/skills.module.css'
 import {NavBar} from "../components/nav-bar";
 import {NextPage} from "next";
+import {Skill} from "../components/skill";
 
 const Skills: NextPage = () => {
+    const programmingLanguages = [
+        'C/C++', 'C#', 'Java', 'JavaScript', 'TypeScript', 'MIPS/Nios', 'Verilog HDL'
+    ];
+
+    const pr = programmingLanguages.map((language) =>
+        // eslint-disable-next-line react/jsx-key
+        <Skill name={language}/>
+    );
+
+    const skills = [
+        'Git', 'ROS', 'AWS', 'Virtual Box', 'MATLAB'
+    ];
+
+    const sk = skills.map((skill) =>
+        // eslint-disable-next-line react/jsx-key
+        <Skill name={skill}/>
+    );
+    const management =[
+        'SCRUM/Agile', 'Microsoft Office','Google GSuite'
+    ]
+    const mg = management.map((manag) =>
+        // eslint-disable-next-line react/jsx-key
+        <Skill name={manag}/>
+    )
+
+    const languages = [
+        'English', 'Polish', 'German'
+    ]
+
+    const lg = languages.map((language) =>
+        // eslint-disable-next-line react/jsx-key
+        <Skill name={language}/>
+    )
+
     return (
         <div>
             <title>Dominika Bobik</title>
@@ -12,20 +47,21 @@ const Skills: NextPage = () => {
                 <div >
                     <div>
                         <h3>Programming Languages</h3>
-                        <p>C/C++, C#, Java, JavaScript, TypeScript, Bash/UNIX, MIPS, Verilog HDL</p>
+                        <ul className={styles.lists}>{pr}</ul>
                     </div>
                     <div>
                         <h3>Software</h3>
-                        <p>Git, AWS, Virtual Box, MATLAB</p>
+                        <ul className={styles.lists}>{sk}</ul>
                     </div>
                     <div>
                         <h3>Management</h3>
-                        <p>SCRUM/Agile, Microsoft Office,Google GSuite</p>
+                        <ul className={styles.lists}>{mg}</ul>
                     </div>
                     <div>
                         <h3>Foreign Languages</h3>
-                        <p>English, Polish, German</p>
+                        <ul className={styles.lists}>{lg}</ul>
                     </div>
+
                 </div>
                 </body>
             </div>

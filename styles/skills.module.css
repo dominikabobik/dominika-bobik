@@ -1,13 +1,20 @@
-.contents {
-    color: black;
-    width: 80%;
-    max-width: 720px;
-}
-
 .wrapper {
     width: 100vw;
     margin-top: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.contents {
+    color: black;
+    width: 80%;
+    max-width: 720px;
+}
+
+
+.lists {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
