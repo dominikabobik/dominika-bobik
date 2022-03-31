@@ -1,0 +1,40 @@
+.projectContainer {
+    border-radius: 10px;
+    border: black solid 1px;
+    margin: 10px;
+    padding: 30px;
+    box-shadow: 0 0 10px 1px #ddd;
+}
+
+.image {
+    display: block;
+    margin: 20px auto;
+    width: 70%;
+}
+
+.description {
+    text-align: center;
+}
+.lists {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.techContainer {
+    border-radius: 10px;
+    border: black solid 1px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 250ms ease-in-out;
+}
+
+.techContainer:hover {
+    background-color: lightsteelblue;
+    transform: scale(1.1);
+}
+
+

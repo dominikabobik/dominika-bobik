@@ -5,7 +5,7 @@
     border-radius: 20%;
     width: 100px;
     height: 100px;
-    background-color: cornflowerblue;
+    background-color: lightsteelblue;
     opacity: 0.75;
     transition: all 250ms ease-in-out;
 }
@@ -21,13 +21,13 @@
     border-radius: 50%;
     display: flex;
     flex-direction: column;
-    border: cornflowerblue solid 1px;
+    border: lightsteelblue solid 1px;
     background-color: white;
     transition: all 250ms ease-in-out;
 }
 
 .container:hover {
-    background-color: cornflowerblue;
+    background-color: lightsteelblue;
     transform: scale(1.1);
     opacity: 1;
 }

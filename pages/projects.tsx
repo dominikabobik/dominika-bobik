@@ -1,10 +1,56 @@
 import type {GetServerSideProps, GetStaticPaths, GetStaticProps, NextPage} from 'next'
 import styles from '../styles/projects.module.css'
 import {NavBar} from "../components/nav-bar";
+import {project, Project} from "../components/project";
 
 interface PageProps {
 
 }
+
+const data: project[] = [
+        {
+                title: 'Resistor Color Decoder',
+                description: 'Made a web app that finds color code based on the resistance of the basic circuit component.',
+                technologies: ['TypeScript','React Native', 'Expo'],
+                img: '/crk.png'
+        },
+        {
+                title: 'Tic Tac Toe',
+                description: 'Created a console-run tic tac toe game for 2 players using C++.',
+                technologies: ['C++'],
+                img: ''
+        },
+        {
+                title: 'Travel App',
+                description: 'Created a Xamarin Forms app that integrated an SQLite database, which allows users to enter the name of the city visited, country, and continent.',
+                technologies: ['C#', 'Xamarin Forms', 'SQLite'],
+                img: ''
+        },
+        {
+                title: 'Snowflakes',
+                description: 'Made a JavaFX application that produces window filled with randomly generated snowflakes.',
+                technologies: ['Java','JavaFX'],
+                img: '/snowflake.jpg'
+        },
+        {
+                title: 'Calculator App',
+                description: 'Wrote an android application in Java that performs 12 distinct mathematical operations. Designed a scalable, vertical\n' +
+                    '         layout that is more suitable than the default one.',
+                technologies: ['Android Studio', 'Java'],
+                img: '/calculator.jpg'
+        },
+        {
+                title: 'Blue Marble Security Enterprise',
+                description: 'Worked on a team of software engineering students focusing on implementing  autonomous pathfinding into a testing. robot using the Robot Operating System (ROS) written in C++ and Python. Provided community outreach and educated the team on circuit design and soldering techniques.',
+                technologies: ['ROS', 'C++', 'Python'],
+                img: ''
+        },
+];
+
+const projects = data.map((item:project) =>
+    // eslint-disable-next-line react/jsx-key
+   <Project title={item.title} description={item.description} technologies={item.technologies} img={item.img}/>
+);
 
 const Projects: NextPage<PageProps> = () => {
     return (
@@ -13,27 +59,7 @@ const Projects: NextPage<PageProps> = () => {
             <title>Dominika Bobik</title>
                 <div className={styles.wrapper}>
                         <body className={styles.contents}>
-                                <h2>Resistor Color Decoder</h2>
-                                <p>Made a web app that finds color code based on the resistance of the basic circuit component.</p>
-                                <p>Technologies: TypeScript, React Native, Expo</p>
-                                <img src={'/crk.png'} alt={"logo"} className={styles.crk}/>
-                                <h2>Tic Tac Toe</h2>
-                                <p>Created a console-run tic tac toe game for 2 players using C++.</p>
-                                <h2>Travel App</h2>
-                                <p>Created a Xamarin Forms app that integrated an SQLite database, which allows users to enter the name of the city visited, country, and continent.</p>
-                                <p>Technologies: C#, Xamarin Forms, SQLite</p>
-                                <h2>Snowflakes</h2>
-                                <p>Made a JavaFX application that produces window filled with randomly generated snowflakes.</p>
-                                <img src={'/snowflake.jpg'} alt="logo" className={styles.snowflake}/>
-                                <h2>Calculator App</h2>
-                                <p>Wrote an android application in Java that performs 12 distinct mathematical operations. Designed a scalable, vertical
-                                        layout that is more suitable than the default one.</p>
-                                <p>Technologies: Android Studio, Java</p>
-                                <img src={'/calculator.jpg'} alt="logo" className={styles.calculator}/>
-                                <h2>Blue Marble Security Enterprise</h2>
-                                <p>Worked on a team of software engineering students focusing on implementing autonomous pathfinding into a testing
-                                        robot using the Robot Operating System (ROS) written in C++ and Python.</p>
-                                <p>Provided community outreach and educated the team on circuit design and soldering techniques.</p>
+                                <ul className={styles.lists}>{projects}</ul>
                         </body>
                 </div>
         </div>
