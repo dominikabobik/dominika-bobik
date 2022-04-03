@@ -46,7 +46,6 @@ const Skills: NextPage = () => {
                             <h3>{skillGroup}</h3>
                             <ul className={styles.lists}>
                                 {skills[skillGroup].map((language, j) => {
-                                    <Skill name={language} key={j}/>
                                 })}
                             </ul>
                         </div>

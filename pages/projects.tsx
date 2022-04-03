@@ -47,9 +47,8 @@ const data: project[] = [
         },
 ];
 
-const projects = data.map((item:project) =>
-    // eslint-disable-next-line react/jsx-key
-   <Project title={item.title} description={item.description} technologies={item.technologies} img={item.img}/>
+const projects = data.map((item: project, i) =>
+   <Project title={item.title} description={item.description} technologies={item.technologies} img={item.img} key={i}/>
 );
 
 const Projects: NextPage<PageProps> = () => {
