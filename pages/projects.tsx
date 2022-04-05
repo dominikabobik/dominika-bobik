@@ -40,8 +40,14 @@ const data: project[] = [
                 img: '/calculator.jpg'
         },
         {
+                title: 'Robotics Systems Enterprise',
+                description: 'Worked on development and implementation of autonomous driving and leader following behavior in the 6 robot (Clearpath Jackals) convoy utilizing ROS.',
+                technologies: ['ROS', 'Python'],
+                img: ''
+        },
+        {
                 title: 'Blue Marble Security Enterprise',
-                description: 'Worked on a team of software engineering students focusing on implementing  autonomous pathfinding into a testing. robot using the Robot Operating System (ROS) written in C++ and Python. Provided community outreach and educated the team on circuit design and soldering techniques.',
+                description: 'Worked on a team of software engineering students focusing on implementing  autonomous pathfinding into a testing robot using the Robot Operating System (ROS), utilizing C++ and Python. Provided community outreach and educated the team on circuit design and soldering techniques.',
                 technologies: ['ROS', 'C++', 'Python'],
                 img: ''
         },
