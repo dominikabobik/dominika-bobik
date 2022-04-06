@@ -6,6 +6,7 @@ export interface project {
 	title: string,
 	description: string,
 	technologies: string[],
+	github?: string,
 	img?: string
 }
 
@@ -27,12 +28,12 @@ export const Project:FC<project> = (props: project) => {
 		image = <div/>
 	}
 	return(
-		<div className={styles.projectContainer}>
+		<a className={styles.projectContainer} href={props.github} target={"_blank"} rel={"noreferrer"}>
 			<h2>{props.title}</h2>
 			<p className={styles.description}>{props.description}</p>
 			{image}
 			<ul className={styles.lists}>{technologies}</ul>
-		</div>
+		</a>
 	);
 }
 
