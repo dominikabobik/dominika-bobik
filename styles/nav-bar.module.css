@@ -1,16 +1,18 @@
-.tags  {
+.container  {
     flex-direction: row;
     display: flex;
     margin-top: 0;
     background-color: white;
+    align-items: center;
     overflow: hidden;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     z-index: 1;
+    box-shadow: 0 0 5px 1px #ddd;
 }
 
-.tags a{
+.container a{
     display: block;
     color: black;
     margin: 20px;
@@ -20,24 +22,33 @@
     transition: all 250ms ease-in-out;
 }
 
-.tags a:hover{
+.container a:hover{
     color: #696969;
     transform: scale(1.1);
+}
+
+.github {
+    color: #6e5494;
+    font-size: 30px;
+}
+
+.linkedin {
+    color: #0072b1;
+    font-size: 30px;
+}
+
+.mail {
+    color: #de5246;
+    font-size: 30px;
 }
 
 .links {
     flex-direction: row;
     display: flex;
-    margin-top: 0;
-    background-color: white;
     margin-left: auto;
-}
+  }
 
 .links a {
-    color: black;
-    display: block;
-    margin: 20px;
-    padding: 4px;
     text-decoration: none;
     transition: all 250ms ease-in-out;
 }

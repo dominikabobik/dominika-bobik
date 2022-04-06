@@ -14,12 +14,6 @@
   flex-grow: 1;
 }
 
-@media (min-width: 720px) {
-  .box {
-    flex-direction: row;
-  }
-}
-
 .textbox {
   margin: 20px 20px 20px 0;
   width:60%;
@@ -31,6 +25,16 @@
   flex-direction: column;
 }
 
+@media (min-width: 720px) {
+  .box {
+    flex-direction: row;
+  }
+  .textbox {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
 .imagebox {
   margin: 10px 40px 10px 40px;
   width:20%;
@@ -40,4 +44,5 @@
   width:100%;
   height:100%;
   object-fit: cover;
+  border-radius: 20px;
 }

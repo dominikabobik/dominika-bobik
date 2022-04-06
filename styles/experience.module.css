@@ -14,10 +14,15 @@
 
 .position {
     border-radius: 10px;
-    border: black solid 1px;
-    margin: 10px;
+    border: #ddd solid 1px;
+    margin: 20px;
     padding: 30px;
     box-shadow: 0 0 10px 1px #ddd;
+    transition: all 250ms ease-in-out;
+}
+
+.position:hover {
+
 }
 
 .image {
