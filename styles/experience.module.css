@@ -30,3 +30,13 @@
     margin: 20px auto;
     width: 70%;
 }
+
+.links {
+    color: #0072b1;
+    transition: all 250ms ease-in-out;
+}
+
+.links:hover {
+    font-weight: bold;
+    text-decoration: underline solid #0072b1;
+}
