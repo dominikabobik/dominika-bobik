@@ -9,6 +9,13 @@ interface PageProps {
 
 const data: project[] = [
         {
+                title: 'DBank',
+                description: 'Created a commandline based banking application using Supabase as a database of choice.',
+                technologies: ['JavaScript','Supabase'],
+                github: 'https://github.com/DomiNika-12/dbank',
+                img: ''
+        },
+        {
                 title: 'Resistor Color Decoder',
                 description: 'Made a web app that finds color code based on the resistance of the basic circuit component.',
                 technologies: ['TypeScript','React Native', 'Expo'],

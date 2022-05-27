@@ -13,6 +13,13 @@ const Experience: NextPage = () => {
 				<h1>Professional Experience</h1>
 				<div className={styles.position}>
 					<h4>Software Engineering Intern,
+						<a href={'https://www.microsoft.com/en-us/?ql=2'} className={styles.links}> Microsoft Corporation</a>
+					</h4>
+					<p>Created a DNS Proxy that added the DoH (DNS over HTTPS) functionality to the Windows OS increasing overall security.</p>
+					<p>Technologies used: C, C++</p>
+				</div>
+				<div className={styles.position}>
+					<h4>Software Engineering Intern,
 						<a href={'https://www.osii.com/'} className={styles.links}> Open Systems International</a>
 					</h4>
 					<p>Developed new features for the power outage management system “Compass” for various customers

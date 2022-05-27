@@ -1,5 +1,4 @@
 import {FC} from "react";
-import {inspect} from "util";
 import styles from '../styles/skill.module.css'
 
 export interface skill {
