@@ -1,4 +1,4 @@
-import {FC} from "react";
+import {FC, ReactNode} from "react";
 import styles from "../styles/project.module.css";
 import Image from 'next/image'
 
@@ -7,7 +7,9 @@ export interface project {
 	description: string,
 	technologies: string[],
 	github?: string,
-	img?: string
+	img?: string,
+	icon: ReactNode,
+	lang?: string
 }
 
 interface tech {
