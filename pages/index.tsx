@@ -7,13 +7,27 @@ import { FcHome } from "react-icons/fc";
 import { FcGlobe } from "react-icons/fc";
 import { FcDocument} from "react-icons/fc";
 import { IconContext } from "react-icons";
-import {FcElectronics} from "react-icons/fc";
-import { FcCrystalOscillator } from "react-icons/fc";
+import {FcElectronics, FcCrystalOscillator} from "react-icons/fc";
+
+import {data} from "../components/s-projects";
+import { useCallback } from 'react';
 interface PageProps {
 
 }
 
+export type Lang = "js" | "py" | "sh" | "c" | "java"
+
+const langs: Record<Lang, {name: string, ext: string}> = {
+  "js": {name: "node", ext: "js"},
+  "py": {name: "python3", ext: "py"},
+  "sh": {name: "bash", ext: "sh"},
+  "c": {name: "gcc ", ext: "c -o a.out && ./a.out"},
+  "java": {name: "javac ", ext: "java -o a.out && java ./a.out"}
+}
+
 const Home: NextPage<PageProps> = () => {
+
+
   return (
   <div>
     <title>Dominika Bobik</title>
@@ -60,7 +74,7 @@ const Home: NextPage<PageProps> = () => {
             <IconContext.Provider value={{color: "blue", className: "icons-size"}}>
               <div className={styles.terminalPosition}>
                 <div style={{display: "flex", flexDirection: "row" }}>
-                  <FcElectronics/>
+                <FcElectronics/>
                   <div className={styles.textDomi}>Domi</div>
                   <div className={styles.textTilda}>~</div>
                   <div className={styles.textLambda}>λ</div>
@@ -97,6 +111,44 @@ const Home: NextPage<PageProps> = () => {
           </div>
         </div>
       </div>
+
+      <div className={styles.test}>
+        <div className={styles.terminal}>
+          <div className={styles.topBar}>
+            <div className={styles.circleR}/>
+            <div className={styles.circleO}/>
+            <div className={styles.circleG}/>
+          </div>
+          <div className={styles.contents}>
+            <IconContext.Provider value={{color: "blue", className: "icons-size"}}>
+              {data.map(project => {
+                const lang = langs[project.lang ?? "js"];
+                return <div className={styles.terminalPosition}>
+                <div style={{display: "flex", flexDirection: "row" }}>
+                  {project.icon}
+                  <div className={styles.textDomi}>Domi</div>
+                  <div className={styles.textTilda}>~</div>
+                  <div className={styles.textLambda}>λ</div>
+                  <div className={styles.textPosition}>{`${lang.name} ./${project.title}.${lang.ext}`}</div>
+                </div>               
+                <div className={styles.tagContents}>   
+                  <div className={styles.textTerminal}>{project.description}</div>
+                  <p className={styles.textTerminalTech}>{project.technologies.map((t, i) => (
+                    <>
+                      {i !== 0 && <p>{'◆'}</p>}
+                      <p>{t}</p>
+                    </>
+                  ))}</p>
+                </div>
+              </div>
+             
+                  })}
+            </IconContext.Provider>
+          </div>
+        </div>
+      </div>
+
+
     </div>
     </body>
   </div>

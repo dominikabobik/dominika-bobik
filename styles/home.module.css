@@ -4,8 +4,8 @@
   justify-content: center;
   align-items: center;
   background-color: #282c34;
-  height: 100vh;
-  margin-top: 200px;
+  padding: 64px;
+  margin-top: 100px;
 }
 
 .box{
@@ -91,7 +91,7 @@
   flex-direction: row;
   height: 30px;
   padding: 10px;
-  gap: 5px;
+  gap: 1ch;
 }
 
 .circleG, .circleO, .circleR {
@@ -114,12 +114,17 @@
 .textTerminal{
   margin-left: 5px;
   color: #5c6370;
+  
 }
 
 .textTerminalTech{
   margin-left: 5px;
   color: #5c6370;
-  justify-items: center;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  gap: 1ch;
+  justify-content: center;
 }
 .textPosition {
   color: white;
