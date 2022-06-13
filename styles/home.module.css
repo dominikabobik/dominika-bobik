@@ -1,38 +1,56 @@
 .wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.box{
-  background-color: white;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
+  background-color: #282c34;
+  height: 100vh;
+  margin-top: 200px;
+}
+
+.box{
+  background-color: #282c34;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutMe{
+  display: flex;
+  flex-direction: column;
+}
+
+.tag {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.terminalPosition{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.text{
+  color:aliceblue;
+  margin-left: 10px;
+}
+
+.icons-size{
+  font-size: 25px;
 }
 
 .textbox {
   margin: 20px 20px 20px 0;
   width:60%;
-  background-color: white;
-  color: black;
+  background-color: #282c34;
+  color: white;
   font-size: 18px;
   text-align: center;
   display: flex;
   flex-direction: column;
-}
-
-@media (min-width: 720px) {
-  .box {
-    flex-direction: row;
-  }
-  .textbox {
-    flex-direction: row;
-    text-align: left;
-  }
 }
 
 .imagebox {
@@ -45,4 +63,90 @@
   height:100%;
   object-fit: cover;
   border-radius: 20px;
+}
+
+.test{
+
+  background-color: #282c34;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.terminal {
+  border-radius: 20px;
+  border: 1px solid #444;
+  background-color: #282c34;
+  width: 50%;
+  min-height: 200px;
+  box-shadow: 0 0 10px 1px #444;
+  padding: 8px;
+}
+
+.topBar {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  padding: 10px;
+  gap: 5px;
+}
+
+.circleG, .circleO, .circleR {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.circleR {
+  background-color: red;
+}
+
+.circleO {
+  background-color: orange;
+}
+.circleG {
+  background-color: green;
+}
+
+.textTerminal{
+  margin-left: 5px;
+  color: #5c6370;
+}
+
+.textTerminalTech{
+  margin-left: 5px;
+  color: #5c6370;
+  justify-items: center;
+}
+.textPosition {
+  color: white;
+  font-weight: bold;
+}
+
+.linkPosition {
+  color: white;
+  font-weight: bold;
+  transition: all 250ms ease-in-out;
+}
+
+.tagContenets{
+  color: white;
+}
+
+.textDomi{
+  color: #61afef;
+  margin: 0 2px 0 2px;
+}
+
+.textTilda{
+  color: #e06c75;
+  margin: 0 2px 0 2px;
+}
+
+.textLambda{
+  color: #98c379;
+  margin: 0 2px 0 2px;
 }
