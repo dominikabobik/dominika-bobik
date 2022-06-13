@@ -5,8 +5,10 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Lato', sans-serif;
-  background-color: white;
+  font-family: 'Roboto Mono', monospace;
+  /*font-family: 'Lato', sans-serif;*/
+  background-color: #282c34;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -19,3 +21,6 @@ a {
   /*border: solid 1px red;*/
 }
 
+.icons-size{
+  font-size: 25px;
+}

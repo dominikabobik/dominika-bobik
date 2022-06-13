@@ -8,11 +8,6 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 export const NavBar: FC = () => {
     return(
             <nav className={styles.container}>
-                <a href={'/'}>HOME</a>
-                <a href={'/projects'}>PROJECTS</a>
-                <a href={'/experience'}>EXPERIENCE</a>
-                <a href={'/skills'}>SKILLS</a>
-                <a href={'/ResumeDominikaBobik.pdf'} target={"_blank"} rel={"noreferrer"}>RESUME</a>
                 <div className={styles.links}>
                     <a href="mailto:dominikabobik12@gmail.com" target={"_blank"} rel={"noreferrer"}>
                         <MailIcon className={styles.mail}/>
