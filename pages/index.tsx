@@ -1,7 +1,6 @@
 import type {GetServerSideProps, GetStaticPaths, GetStaticProps, NextPage} from 'next'
 import styles from '../styles/home.module.css'
 import {NavBar} from "../components/nav-bar";
-import Projects from './projects';
 import { FcGraduationCap } from "react-icons/fc";
 import { FcHome } from "react-icons/fc";
 import { FcGlobe } from "react-icons/fc";
@@ -9,13 +8,13 @@ import { FcDocument} from "react-icons/fc";
 import { IconContext } from "react-icons";
 import {FcElectronics, FcCrystalOscillator} from "react-icons/fc";
 
-import {data} from "../components/s-projects";
+import {data, Lang} from "../components/s-projects";
 import { useCallback } from 'react';
 interface PageProps {
 
 }
 
-export type Lang = "js" | "py" | "sh" | "c" | "java"
+
 
 const langs: Record<Lang, {name: string, ext: string}> = {
   "js": {name: "node", ext: "js"},
@@ -44,8 +43,7 @@ const Home: NextPage<PageProps> = () => {
         <div className={styles.aboutMe}>
           <div className={styles.tag}>
           <FcGlobe/>
-            <div className={styles.text}>Currently</div>
-            <div className={styles.text}>living in Redmond, WA USA</div>
+            <div className={styles.text}>Currently living in Redmond, WA USA</div>
           </div>
           <div className={styles.tag}>
             <FcGraduationCap></FcGraduationCap>
