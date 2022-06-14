@@ -1,6 +1,5 @@
 import {FC, ReactNode} from "react";
 import styles from "../styles/project.module.css";
-import Image from 'next/image'
 
 export interface project {
 	title: string,

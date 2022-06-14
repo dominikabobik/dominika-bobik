@@ -1,14 +1,7 @@
-import type {GetServerSideProps, GetStaticPaths, GetStaticProps, NextPage} from 'next'
-import styles from '../styles/projects.module.css'
-import {NavBar} from "../components/nav-bar";
-import {Project} from "../components/project";
-import {FcElectronics, FcCrystalOscillator, FcEngineering, FcAndroidOs, FcCircuit, FcChargeBattery, FcLibrary, FcMindMap} from "react-icons/fc";
+import {FcCrystalOscillator, FcEngineering, FcAndroidOs, FcCircuit, FcChargeBattery, FcLibrary, FcMindMap} from "react-icons/fc";
 import { ReactNode } from 'react';
-import { Lang } from '../pages';
 
-interface PageProps {
-
-}
+export type Lang = "js" | "py" | "sh" | "c" | "java"
 
 export interface project {
 	title: string,
@@ -91,20 +84,3 @@ export const data: project[] = [
                 icon: <FcCrystalOscillator/>
         },
 ];
-
-const Projects: NextPage<PageProps> = () => {
-    return (
-        <div className={styles.main}>
-                <div className={styles.wrapper}>
-                        <body className={styles.contents}>
-                                <ul className={styles.lists}>{data.map((item: project, i) =>
-                                    <Project key={i} {...item}/>
-                                )}</ul>
-                        </body>
-                </div>
-        </div>
-
-    )
-}
-
-export default Projects
