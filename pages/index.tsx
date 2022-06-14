@@ -121,7 +121,7 @@ const Home: NextPage<PageProps> = () => {
             <IconContext.Provider value={{color: "blue", className: "icons-size"}}>
               {data.map(project => {
                 const lang = langs[project.lang ?? "js"];
-                return <div className={styles.terminalPosition}>
+                return (<div className={styles.terminalPosition}>
                 <div style={{display: "flex", flexDirection: "row" }}>
                   {project.icon}
                   <div className={styles.textDomi}>Domi</div>
@@ -138,15 +138,11 @@ const Home: NextPage<PageProps> = () => {
                     </>
                   ))}</p>
                 </div>
-              </div>
-             
-                  })}
+              </div>)})}
             </IconContext.Provider>
           </div>
         </div>
       </div>
-
-
     </div>
     </body>
   </div>
