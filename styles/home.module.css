@@ -114,14 +114,22 @@
 }
 
 .textTerminalTech{
-  margin-left: 5px;
   color: #5c6370;
   width: 100%;
-  text-align: center;
   display: flex;
+  flex-direction: row;
   gap: 1ch;
   justify-content: center;
+  text-align: center;
 }
+
+.technologiesStyling{
+  display: flex;
+  flex-direction: row;
+  gap: 1ch; 
+}
+
+
 .textPosition {
   color: white;
   font-weight: bold;

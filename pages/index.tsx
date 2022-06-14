@@ -122,23 +122,24 @@ const Home: NextPage<PageProps> = () => {
               {data.map(project => {
                 const lang = langs[project.lang ?? "js"];
                 return (<div className={styles.terminalPosition}>
-                <div style={{display: "flex", flexDirection: "row" }}>
-                  {project.icon}
-                  <div className={styles.textDomi}>Domi</div>
-                  <div className={styles.textTilda}>~</div>
-                  <div className={styles.textLambda}>λ</div>
-                  <div className={styles.textPosition}>{`${lang.name} ./${project.title}.${lang.ext}`}</div>
-                </div>               
-                <div className={styles.tagContents}>   
-                  <div className={styles.textTerminal}>{project.description}</div>
-                  <p className={styles.textTerminalTech}>{project.technologies.map((t, i) => (
-                    <>
-                      {i !== 0 && <p>{'◆'}</p>}
-                      <p>{t}</p>
-                    </>
-                  ))}</p>
-                </div>
-              </div>)})}
+                        <div style={{display: "flex", flexDirection: "row" }}>
+                          {project.icon}
+                          <div className={styles.textDomi}>Domi</div>
+                          <div className={styles.textTilda}>~</div>
+                          <div className={styles.textLambda}>λ</div>
+                          <div className={styles.textPosition}>{`${lang.name} ./${project.title}.${lang.ext}`}</div>
+                        </div>               
+                        <div className={styles.tagContents}>   
+                          <div className={styles.textTerminal}>{project.description}</div>
+                          <p className={styles.textTerminalTech}>{project.technologies.map((t, i) => (
+                              <div key={t} className={styles.technologiesStyling}>
+                                {i !== 0 && <p>{'◆'}</p>}
+                                <p>{t}</p>
+                              </div>
+                          ))}</p>
+                        </div>
+                      </div>
+                  )})}
             </IconContext.Provider>
           </div>
         </div>
