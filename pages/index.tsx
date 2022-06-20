@@ -39,7 +39,7 @@ const Home: NextPage<PageProps> = () => {
           <img src={'/photo.png'} alt="" className={styles.image}/>
         </div>
 
-        <IconContext.Provider value={{color: "blue", className: "icons-size"}}>
+        <IconContext.Provider value={{color: "blue", className: "iconsTopSection"}}>
         <div className={styles.aboutMe}>
           <div className={styles.tag}>
           <FcGlobe/>
@@ -68,11 +68,11 @@ const Home: NextPage<PageProps> = () => {
             <div className={styles.circleO}/>
             <div className={styles.circleG}/>
           </div>
-          <div className={styles.contents}>
+          <div>
             <IconContext.Provider value={{color: "blue", className: "icons-size"}}>
               <div className={styles.terminalPosition}>
                 <div style={{display: "flex", flexDirection: "row" }}>
-                <FcElectronics/>
+                  <div className={styles.icons}><FcElectronics/></div>
                   <div className={styles.textDomi}>Domi</div>
                   <div className={styles.textTilda}>~</div>
                   <div className={styles.textLambda}>λ</div>
