@@ -2,7 +2,7 @@
     flex-direction: row;
     display: flex;
     margin-top: 0;
-    background-color: transparent;
+    background-color: #282c34;
     align-items: center;
     overflow: hidden;
     position: fixed; /* Set the navbar to fixed position */

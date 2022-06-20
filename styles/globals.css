@@ -18,9 +18,27 @@ a {
 
 * {
   box-sizing: border-box;
-  /* border: solid 1px red; */
+  border: solid 1px red;
 }
+
 
 .icons-size{
   font-size: 25px;
+  display: none;
+}
+
+.iconsTopSection{
+  font-size: 70px;
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .icons-size{
+    font-size: 25px;
+    display: block;
+  }
+  .iconsTopSection{
+    font-size: 40px;
+    display: block;
+  }
 }
