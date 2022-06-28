@@ -8,7 +8,7 @@ import { FcDocument} from "react-icons/fc";
 import { IconContext } from "react-icons";
 import {FcElectronics, FcCrystalOscillator} from "react-icons/fc";
 
-import {data, Lang} from "../components/s-projects";
+import {data, Lang} from "../components/data";
 import { useCallback } from 'react';
 interface PageProps {
 
