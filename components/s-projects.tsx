@@ -24,8 +24,8 @@ export const data: project[] = [
 		lang: "js"
 	},
 	{
-		title: 'Resistor Color Decoder',
-		description: 'Made a web app that finds color code based on the resistance of the basic circuit component.',
+		title: 'eeAID',
+		description: 'Made a progressive web app that finds color code based on the resistance of the basic circuit component and does calculations commonly used by electrical engineers.',
 		technologies: ['TypeScript','React Native', 'Expo'],
 		github: 'https://github.com/DomiNika-12/circuits',
 		img: '/crk.png',
