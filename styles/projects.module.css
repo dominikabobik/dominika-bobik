@@ -1,0 +1,300 @@
+.text{
+  color:aliceblue;
+}
+
+.textbox {
+  margin: 20px 20px 20px 0;
+  width:60%;
+  background-color: #282c34;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contents {
+  overflow: scroll;
+  height: 90%;
+}
+
+.terminal {
+  border-radius: 20px;
+  border: 1px solid #444;
+  background-color: #282c34;
+  width: 90%;
+  max-height: 70%;
+  box-shadow: 0 0 10px 1px #444;
+  padding: 8px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 0%;
+}
+
+.contents {
+  overflow: scroll;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.topBar {
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  top: 0;
+  height: 30px;
+  padding: 10px;
+  gap: 1ch;
+  background-color: #282c34;
+}
+
+.circleG, .circleO, .circleR {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.circleR {
+  background-color: red;
+}
+
+.circleO {
+  background-color: orange;
+}
+.circleG {
+  background-color: green;
+}
+
+.textTerminal{
+  margin-left: 5px;
+  color: #5c6370;
+  text-align: center;
+  font-size: 14px;
+}
+
+.textTerminalTech{
+  color: #5c6370;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1ch;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.technologiesStyling{
+  display: flex;
+  flex-direction: row;
+  gap: 1ch; 
+}
+
+.textPosition {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.linkPosition {
+  color: white;
+  font-weight: bold;
+  transition: all 250ms ease-in-out;
+}
+
+.tagContenets{
+  color: white;
+}
+
+.textDomi{
+  color: #61afef;
+  margin: 0 2px 0 2px;
+  font-size: 10px;
+}
+
+.textTilda{
+  color: #e06c75;
+  margin: 0 2px 0 2px;
+  font-size: 10px;
+}
+
+.textLambda{
+  color: #98c379;
+  margin: 0 2px 0 2px;
+  font-size: 10px;
+}
+
+.textLambda, .textDomi, .textTilda {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #282c34;
+    padding: 64px;
+    right: 5%;
+  }
+  
+  .box{
+    background-color: #282c34;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .aboutMe{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tag {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+  }
+  
+  .terminalPosition{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .text{
+    color:aliceblue;
+    margin-left: 10px;
+  }
+  
+  .textbox {
+    margin: 20px 20px 20px 0;
+    width:60%;
+    background-color: #282c34;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .imagebox {
+    width:40%;
+    justify-self: center;
+    max-width: 300px;
+  }
+  
+  .image {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .test{
+  
+    background-color: #282c34;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+  }
+  
+  .terminal {
+    border-radius: 20px;
+    border: 1px solid #444;
+    background-color: #282c34;
+    width: 50%;
+    min-height: 200px;
+    box-shadow: 0 0 10px 1px #444;
+    padding: 8px;
+  }
+  
+  .topBar {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    padding: 10px;
+    gap: 1ch;
+  }
+  
+  .circleG, .circleO, .circleR {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+  }
+  
+  .circleR {
+    background-color: red;
+  }
+  
+  .circleO {
+    background-color: orange;
+  }
+  .circleG {
+    background-color: green;
+  }
+  
+  .textTerminal{
+    margin-left: 5px;
+    color: #5c6370;
+    
+  }
+  
+  .textTerminalTech{
+    color: #5c6370;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1ch;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .technologiesStyling{
+    display: flex;
+    flex-direction: row;
+    gap: 1ch; 
+  }
+  
+  
+  .textPosition {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .linkPosition {
+    color: white;
+    font-weight: bold;
+    transition: all 250ms ease-in-out;
+  }
+  
+  .tagContenets{
+    color: white;
+  }
+  
+  .textDomi{
+    color: #61afef;
+    margin: 0 2px 0 2px;
+  }
+  
+  .textTilda{
+    color: #e06c75;
+    margin: 0 2px 0 2px;
+  }
+  
+  .textLambda{
+    color: #98c379;
+    margin: 0 2px 0 2px;
+  }
+
+  .icons {
+    visibility: visible;
+  }
+}
