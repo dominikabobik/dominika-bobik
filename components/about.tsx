@@ -29,8 +29,10 @@ export const About: FC = () => {
     >
       <div className={styles.terminal} style={{ zIndex: zIndexInternal }}>
         <div className={styles.topBar}>
-          <div className={styles.circleR} />
-          <div className={styles.circleO} />
+          <div className={styles.circleR} onClick={() => click.setStateAbout(false)}>
+          </div>
+          <div className={styles.circleO} onClick={() => click.setStateAbout(false)}>
+          </div>
           <div className={styles.circleG} />
         </div>
         <div className={styles.contents}>
