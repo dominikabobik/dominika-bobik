@@ -29,8 +29,10 @@ export const Experience: FC = () => {
     >
       <div className={styles.terminal} style={{ zIndex: zIndexInternal }}>
         <div className={styles.topBar}>
-          <div className={styles.circleR} />
-          <div className={styles.circleO} />
+          <div className={styles.circleR} onClick={() => click.setStateExperience(false)}>
+          </div>
+          <div className={styles.circleO} onClick={() => click.setStateExperience(false)}>
+          </div>
           <div className={styles.circleG} />
         </div>
         {/* <div>{`Internal: ${zIndexInternal} global: ${click.zIndex}`}</div> */}
