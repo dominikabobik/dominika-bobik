@@ -27,9 +27,9 @@ export const useGlobalContext = () => useContext(bottomContext)
 
 const Home: NextPage<PageProps> = () => {
 
-  const [stateAbout, setStateAbout] = useState(false)
-  const [stateExperience, setStateExperience] = useState(false)
-  const [stateProjects, setStateProjects] = useState(false)
+  const [stateAbout, setStateAbout] = useState(true)
+  const [stateExperience, setStateExperience] = useState(true)
+  const [stateProjects, setStateProjects] = useState(true)
   const [zIndex, setZIndex] = useState(1)
 
   return (
