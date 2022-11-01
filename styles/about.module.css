@@ -1,37 +1,24 @@
-.contents {
-  overflow: scroll;
-  height: 90%;
-}
-
 .terminal {
   border-radius: 20px;
   border: 1px solid #444;
-  background-color: #282c34;
+  background-color: rgb(219, 219, 219);
   width: 30%;
   box-shadow: 0 0 10px 1px #444;
   padding: 8px;
   position: absolute;
   display: flex;
   flex-direction: column;
+  left: 2%;
+  top: 2%;
 }
 
 .contents {
   height: 90%;
   flex-direction: row;
   display: flex;
-  overflow: hidden;
-}
+  overflow: scroll;
+  color: black;
 
-.terminal {
-  border-radius: 20px;
-  border: 1px solid #444;
-  background-color: #282c34;
-  width: 40%;
-  box-shadow: 0 0 10px 1px #444;
-  padding: 10px;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
 }
 
 .topBar {
@@ -42,7 +29,8 @@
   height: 30px;
   padding: 10px;
   gap: 1ch;
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  background-color: rgb(219, 219, 219);
 }
 
 .circleG, .circleO, .circleR {
@@ -98,7 +86,7 @@
   margin: 10px;
 }
 .text{
-  color:aliceblue;
+  color: black;
   margin-left: 10px;
 }
 

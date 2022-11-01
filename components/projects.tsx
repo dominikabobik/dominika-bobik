@@ -3,7 +3,7 @@ import { data, Lang } from "./data";
 import styles from "../styles/projects.module.css"
 import { IconContext } from "react-icons";
 import Draggable from "react-draggable";
-import zIndex from "@mui/material/styles/zIndex";
+import { BsChevronCompactDown } from 'react-icons/bs'
 import { bottomContextType, useGlobalContext } from "../pages";
 
 export const Projects: FC = () => {
@@ -47,27 +47,34 @@ export const Projects: FC = () => {
         {/* <div>{`Internal: ${zIndexInternal} global: ${click.zIndex}`}</div> */}
         <div className={styles.contents}>
           <IconContext.Provider value={{ color: "blue", className: "icons-size" }}>
-            {data.map(project => {
-              const lang = langs[project.lang ?? "js"];
-              return <div key={project.title} className={styles.terminalPosition}>
-                <div style={{ display: "flex", flexDirection: "row" }}>
-                  {project.icon}
-                  <div className={styles.textDomi}>Domi</div>
-                  <div className={styles.textTilda}>~</div>
-                  <div className={styles.textLambda}>λ</div>
-                  <div className={styles.textPosition}>{`${lang.name} ./${project.title}.${lang.ext}`}</div>
+            <div className={styles.scrollContent}>
+              {data.map(project => {
+                const lang = langs[project.lang ?? "js"];
+                return <div key={project.title} className={styles.terminalPosition}>
+                  <div style={{ display: "flex", flexDirection: "row" }}>
+                    {project.icon}
+                    <div className={styles.textDomi}>Domi</div>
+                    <div className={styles.textTilda}>~</div>
+                    <div className={styles.textLambda}>λ</div>
+                    <div className={styles.textPosition}>{`${lang.name} ./${project.title}.${lang.ext}`}</div>
+                  </div>
+                  <div className={styles.tagContents}>
+                    <div className={styles.textTerminal}>{project.description}</div>
+                    <p className={styles.textTerminalTech}>{project.technologies.map((t, i) => (
+                      <div key={t} className={styles.technologiesStyling}>
+                        {i !== 0 && <p>{'◆'}</p>}
+                        <p>{t}</p>
+                      </div>
+                    ))}</p>
+                  </div>
                 </div>
-                <div className={styles.tagContents}>
-                  <div className={styles.textTerminal}>{project.description}</div>
-                  <p className={styles.textTerminalTech}>{project.technologies.map((t, i) => (
-                    <div key={t} className={styles.technologiesStyling}>
-                      {i !== 0 && <p>{'◆'}</p>}
-                      <p>{t}</p>
-                    </div>
-                  ))}</p>
-                </div>
-              </div>
-            })}
+              })}
+            </div>
+          </IconContext.Provider>
+        </div>
+        <div className={styles.bottomArrow}>
+          <IconContext.Provider value={{ color: "black", className: "icons-size" }}>
+            <BsChevronCompactDown />
           </IconContext.Provider>
         </div>
       </div>
