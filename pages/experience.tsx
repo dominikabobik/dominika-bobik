@@ -11,7 +11,7 @@ const Experience: NextPage = () => {
       <About />
       <div className={styles.mainWrapper}>
         <NavBar />
-        <div>
+        <div className={styles.contentsWrapper}>
           <ExperienceContents />
         </div>
       </div>
