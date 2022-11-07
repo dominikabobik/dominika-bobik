@@ -1,6 +1,7 @@
 import { NextPage } from "next"
 import { About } from "../components/about"
 import { NavBar } from "../components/nav-bar"
+import { ProjectsContent } from "../components/projects"
 import styles from '../styles/projects.module.css'
 
 const Projects: NextPage = () => {
@@ -10,7 +11,9 @@ const Projects: NextPage = () => {
       <About />
       <div className={styles.mainWrapper}>
         <NavBar />
-        <div>Hi</div>
+        <div className={styles.contentsWrapper}>
+          <ProjectsContent />
+        </div>
       </div>
     </div>
   )

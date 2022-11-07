@@ -1,36 +1,32 @@
 import { FC, useEffect, useState } from "react"
 import { data, Lang } from "./data";
-import styles from "../styles/projects.module.css"
-import { IconContext } from "react-icons";
+import styles from "../styles/projectsContent.module.css"
+import GitHubIcon from '@mui/icons-material/GitHub';
 
-export const Projects: FC = () => {
+export const ProjectsContent: FC = () => {
 
   return (
-    <div className={styles.terminal}>
-      <div className={styles.contents}>
-        <IconContext.Provider value={{ color: "blue", className: "icons-size" }}>
-          {data.map(project => {
-            return <div key={project.title} className={styles.terminalPosition}>
-              <div style={{ display: "flex", flexDirection: "row" }}>
-                {project.icon}
-                <div className={styles.textDomi}>Domi</div>
-                <div className={styles.textTilda}>~</div>
-                <div className={styles.textLambda}>λ</div>
-                <div className={styles.textPosition}>{` ./${project.title}`}</div>
-              </div>
-              <div className={styles.tagContents}>
-                <div className={styles.textTerminal}>{project.description}</div>
-                <p className={styles.textTerminalTech}>{project.technologies.map((t, i) => (
-                  <div key={t} className={styles.technologiesStyling}>
-                    {i !== 0 && <p>{'◆'}</p>}
-                    <p>{t}</p>
-                  </div>
-                ))}</p>
-              </div>
+    <div className={styles.container}>
+      {data.map(project => {
+        return (
+          <div key={project.title} className={styles.contentWrapper}>
+            <div style={{ display: "flex", flexDirection: "row", width: '100%', paddingBottom: '10px' }}>
+              <div className={styles.textTitle}>{project.title}</div>
+              {project.github && <a style={{ marginLeft: 'auto' }} href={project.github} target={"_blank"} rel={"noreferrer"}>
+                <GitHubIcon className={styles.github} />
+              </a>}
             </div>
-          })}
-        </IconContext.Provider>
-      </div>
+            <div className={styles.tagContents}>
+              <div className={styles.textDescription}>{project.description}</div>
+              <p className={styles.textTerminalTech}>{project.technologies.map((t, i) => (
+                <div key={t} className={styles.technologiesStyling}>
+                  {i !== 0 && <p>{'◆'}</p>}
+                  <p>{t}</p>
+                </div>
+              ))}</p>
+            </div>
+          </div>)
+      })}
     </div>
   )
 }

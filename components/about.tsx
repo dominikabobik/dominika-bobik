@@ -32,13 +32,9 @@ export const About: FC = () => {
       <IconContext.Provider value={{ className: "iconsTopSection" }}>
         <div className={styles.aboutMe}>
           <div className={styles.tag}>
-            <div className={styles.text}>Currently living in Redmond, WA USA</div>
-          </div>
-          <div className={styles.tag}>
-            <div className={styles.text}>Michigan Technological University</div>
-          </div>
-          <div className={styles.tag}>
-            <div className={styles.text}>Wroclaw, Poland</div>
+            <div className={styles.text}>
+              Software engineer based in Seattle.
+            </div>
           </div>
           <div className={styles.tag}>
             <a href={'/ResumeDominikaBobik.pdf'} target={"_blank"} rel={"noreferrer"} className={styles.text}>Resume</a>
