@@ -10,7 +10,7 @@ const Blog: NextPage = () => {
       <About />
       <div className={styles.mainWrapper}>
         <NavBar />
-        <div>Hi</div>
+        <div></div>
       </div>
     </div>
   )
