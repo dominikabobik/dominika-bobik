@@ -1,3 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.mainWrapper {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
 .terminalPosition{
   display: flex;
   flex-direction: column;
