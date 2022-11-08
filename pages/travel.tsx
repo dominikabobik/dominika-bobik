@@ -45,11 +45,11 @@ const Travel: NextPage = () => {
               </Map>
             </div>
             <div className={styles.text}>
-              Here are some best shots from my adventures:
+              Here are some shots from my adventures:
             </div>
             {dataTravel.map((e, i) => {
-              if (i % 2 == 0) return <TravelCardLeft title={e.title} time={e.time} image={`/travel/${e.image}`} />
-              else return <TravelCardRight title={e.title} time={e.time} image={`/travel/${e.image}`} />
+              if (i % 2 == 0) return <TravelCardLeft key={e.title} title={e.title} time={e.time} image={`/travel/${e.image}`} />
+              else return <TravelCardRight key={e.title} title={e.title} time={e.time} image={`/travel/${e.image}`} />
             })}
           </div>
         </div>

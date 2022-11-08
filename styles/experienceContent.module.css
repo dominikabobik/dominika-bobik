@@ -28,13 +28,12 @@
 }
 
 .resumeWrapper:hover {
-  border: 1px solid #61afef;
+  border: 1px solid #0076d7;
+  color: #0076d7;
   transform: scale(1.1);
-
 }
-
-.resume {
-  color: black;
+.resume:hover {
+  color: #0076d7;
 }
 
 .textTerminal{
@@ -72,5 +71,6 @@
 
 .linkPosition:hover {
   text-decoration: underline;
-  transform: scale(1.1);
+  color: #0076d7;
+  /* transform: scale(1.1); */
 }
