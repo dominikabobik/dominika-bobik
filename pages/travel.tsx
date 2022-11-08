@@ -4,7 +4,7 @@ import { NavBar } from "../components/nav-bar"
 import { TravelCardLeft } from "../components/travelCardLeft"
 import { TravelCardRight } from "../components/travelCardRight"
 import styles from '../styles/travel.module.css'
-import { dataTravel } from '../components/data'
+import { dataTravel, travelMarkers } from '../components/data'
 import { useRef } from "react"
 import Map, { MapRef, Marker } from 'react-map-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
@@ -32,8 +32,12 @@ const Travel: NextPage = () => {
                 style={{ width: '100%', height: '100%' }}
                 mapStyle="mapbox://styles/mapbox/light-v10"
               >
-                <Marker longitude={-100} latitude={40} anchor="bottom" color='black'>
-                </Marker>
+                {
+                  travelMarkers.map(marker => {
+                    return (<Marker key={marker.lon + marker.lat} longitude={marker.lon} latitude={marker.lat} anchor="bottom" color='black'>
+                    </Marker>)
+                  })
+                }
               </Map>
             </div>
             {dataTravel.map((e, i) => {
