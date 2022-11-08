@@ -3,6 +3,7 @@ import styles from '../styles/home.module.css'
 import { NavBar } from "../components/nav-bar";
 import React, { useContext, useState } from 'react';
 import { About } from '../components/about';
+import { BlogContent } from '../components/blogContent';
 
 const Home: NextPage = () => {
 
@@ -14,7 +15,9 @@ const Home: NextPage = () => {
           <About />
           <div className={styles.mainWrapper}>
             <NavBar />
-            <div>Hi</div>
+            <div className={styles.contentsWrapper}>
+              <BlogContent />
+            </div>
           </div>
         </div>
       </body>

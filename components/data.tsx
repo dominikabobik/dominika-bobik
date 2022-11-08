@@ -181,3 +181,25 @@ export const dataTravel = [
 		time: 'Summer 2021'
 	}
 ]
+
+export interface BlogPostData {
+	title: string,
+	date: string,
+	description: string,
+	img: string
+}
+
+export const blogPosts: BlogPostData[] = [
+	{
+		title: '1st place in the Computing[MTU] poster session',
+		date: '10/10/22',
+		description: 'sdfskkdsjfkdjsfjksbdkjfsdfkbdfk',
+		img: '/poster.jpg'
+	},
+	{
+		title: 'Awarded an Undergraduate Research Internship Program (URIP)',
+		date: '5/30/22',
+		description: 'sdfskkdsjfkdjsfjksbdkjfsdfkbdfk',
+		img: '/poster.jpg'
+	}
+]
