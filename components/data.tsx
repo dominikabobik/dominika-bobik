@@ -212,7 +212,7 @@ export const travelMarkers = [
 		country: 'Poland'
 	},
 	{
-		lon: 122.4194,
+		lon: -122.4194,
 		lat: 37.7749,
 		city: 'San Francisco',
 		country: 'USA'
@@ -222,5 +222,203 @@ export const travelMarkers = [
 		lat: 41.9028,
 		city: 'Rome',
 		country: 'Italy'
-	}
+	},
+	{
+		lon: 2.352222,
+		lat: 48.856613,
+		city: 'Paris',
+		country: 'France'
+	},
+	{
+		lon: -0.127758,
+		lat: 51.507351,
+		city: 'London',
+		country: 'England'
+	},
+	{
+		lon: 13.058540,
+		lat: 52.396149,
+		city: 'Potsdam',
+		country: 'Germany'
+	},
+	{
+		lon: 16.373819,
+		lat: 48.208176,
+		city: 'Vienna',
+		country: 'Austria'
+	},
+	{
+		lon: 14.437800,
+		lat: 50.075539,
+		city: 'Prague',
+		country: 'Czech'
+	},
+	{
+		lon: 19.024673,
+		lat: 47.497981,
+		city: 'Budapest',
+		country: 'Hungary'
+	},
+	{
+		lon: 21.0122,
+		lat: 52.2297,
+		city: 'Warsaw',
+		country: 'Poland'
+	},
+	{
+		lon: 12.4964,
+		lat: 41.9028,
+		city: 'Rome',
+		country: 'Italy'
+	},
+	{
+		lon: -58.3816,
+		lat: -34.6037,
+		city: 'Buenos Aires',
+		country: 'Argentina'
+	},
+	{
+		lon: -80.1918,
+		lat: 25.7617,
+		city: 'Miami',
+		country: 'USA'
+	},
+	{
+		lon: -122.3321,
+		lat: 47.6062,
+		city: 'Seattle',
+		country: 'USA'
+	},
+	{
+		lon: -123.1207,
+		lat: 49.2827,
+		city: 'Vancouver',
+		country: 'USA'
+	},
+	{
+		lon: -118.2437,
+		lat: 34.0522,
+		city: 'Los Angeles',
+		country: 'USA'
+	},
+	{
+		lon: -88.5694,
+		lat: 47.1211,
+		city: 'Houghton',
+		country: 'USA'
+	},
+	{
+		lon: 13.8496,
+		lat: 44.8666,
+		city: 'Pula',
+		country: 'Croatia'
+	},
+	{
+		lon: 12.3155,
+		lat: 45.4408,
+		city: 'Venice',
+		country: 'Italy'
+	},
+	{
+		lon: 17.1077,
+		lat: 48.1486,
+		city: 'Bratislava',
+		country: 'Slovakia'
+	},
+	{
+		lon: 7.9215,
+		lat: 46.6054,
+		city: 'Wengen',
+		country: 'Switzerland'
+	},
+	{
+		lon: 13.3615,
+		lat: 38.1157,
+		city: 'Palermo',
+		country: 'Italy'
+	},
+	{
+		lon: 14.8669,
+		lat: 55.1604,
+		city: 'Bornholm',
+		country: 'Denmark'
+	},
+	{
+		lon: -0.4907,
+		lat: 38.3460,
+		city: 'Alicante',
+		country: 'Spain'
+	},
+	{
+		lon: -80.7526,
+		lat: 32.2163,
+		city: 'Hilton Head Island',
+		country: 'USA'
+	},
+	{
+		lon: -87.6298,
+		lat: 41.8781,
+		city: 'Chicago',
+		country: 'USA'
+	},
+	{
+		lon: -83.0458,
+		lat: 42.3314,
+		city: 'Detroit',
+		country: 'USA'
+	},
+	{
+		lon: -85.6206,
+		lat: 44.7631,
+		city: 'Traverse City',
+		country: 'USA'
+	},
+	{
+		lon: -82.7690,
+		lat: 27.7692,
+		city: 'Treasure Island',
+		country: 'USA'
+	},
+	{
+		lon: -120.6615,
+		lat: 47.5962,
+		city: 'Leavenworth',
+		country: 'USA'
+	},
+	{
+		lon: 11.0457,
+		lat: 35.5024,
+		city: 'Mahdia',
+		country: 'Tunisia'
+	},
+	{
+		lon: 9.6253,
+		lat: 40.9961,
+		city: 'Golfo Aranci',
+		country: 'Italy'
+	},
+	{
+		lon: 11.0032,
+		lat: 46.5479,
+		city: 'Santa Valburga',
+		country: 'Italy'
+	},
+	{
+		lon: 11.3426,
+		lat: 44.4949,
+		city: 'Bologna',
+		country: 'Italy'
+	},
+	{
+		lon: 24.8093,
+		lat: 35.2401,
+		city: 'Crete',
+		country: 'Grece'
+	},
+	{
+		lon: 19.9450,
+		lat: 50.0647,
+		city: 'Krakow',
+		country: 'Poland'
+	},
 ]
