@@ -8,7 +8,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 export const NavBar: FC = () => {
     return (
         <nav className={styles.container}>
-            <a href={'/blog'}>
+            <a href={'/'}>
                 Blog
             </a>
             <a href={'/travel'}>
