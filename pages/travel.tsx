@@ -11,7 +11,6 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 
 const Travel: NextPage = () => {
 
-
   const mapRef = useRef<MapRef>(null);
 
   return (
@@ -21,24 +20,32 @@ const Travel: NextPage = () => {
         <NavBar />
         <div className={styles.contentsWrapper}>
           <div className={styles.cardsContainer}>
+            <div className={styles.text}>
+              I love trvelling and exploring new cultures. Checkout places I have visited so far!
+            </div>
             <div className={styles.mapWrapper}>
               <Map
                 initialViewState={{
-                  longitude: 40,
-                  latitude: 50,
-                  zoom: 0
+                  longitude: 0,
+                  latitude: 30,
+                  zoom: 1
                 }}
                 mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_GL_ACCESS_TOKEN}
                 style={{ width: '100%', height: '100%' }}
                 mapStyle="mapbox://styles/mapbox/light-v10"
+                renderWorldCopies={false}
+                attributionControl={false}
               >
                 {
                   travelMarkers.map(marker => {
-                    return (<Marker key={marker.lon + marker.lat} longitude={marker.lon} latitude={marker.lat} anchor="bottom" color='black'>
+                    return (<Marker key={marker.lon + marker.lat} longitude={marker.lon} latitude={marker.lat} color='black'>
                     </Marker>)
                   })
                 }
               </Map>
+            </div>
+            <div className={styles.text}>
+              Here are some best shots from my adventures:
             </div>
             {dataTravel.map((e, i) => {
               if (i % 2 == 0) return <TravelCardLeft title={e.title} time={e.time} image={`/travel/${e.image}`} />

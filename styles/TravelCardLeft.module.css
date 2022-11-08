@@ -4,11 +4,12 @@
   width: 100%;
   justify-content: space-between;
   border-bottom: 1px solid #ddd;
-  padding: 2%;
+  padding: 3%;
 }
 
 .image{
   width: 50%;
+  border-radius: 20px;
 }
 
 .textWrapper {

@@ -20,7 +20,7 @@
 
 .postWrapper:hover {
   border-color: #5c6370;
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
 }
 
 .title {
