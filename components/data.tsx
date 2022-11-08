@@ -203,3 +203,24 @@ export const blogPosts: BlogPostData[] = [
 		img: '/poster.jpg'
 	}
 ]
+
+export const travelMarkers = [
+	{
+		lon: 17.03,
+		lat: 51.11,
+		city: 'Wroclaw',
+		country: 'Poland'
+	},
+	{
+		lon: 122.4194,
+		lat: 37.7749,
+		city: 'San Francisco',
+		country: 'USA'
+	},
+	{
+		lon: 12.4964,
+		lat: 41.9028,
+		city: 'Rome',
+		country: 'Italy'
+	}
+]
