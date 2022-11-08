@@ -1,61 +1,54 @@
-.terminal {
-  border-radius: 20px;
-  border: 1px solid #444;
-  background-color: rgb(219, 219, 219);
-  width: 30%;
-  box-shadow: 0 0 10px 1px #444;
-  padding: 8px;
-  position: absolute;
+.container{
+  height: 100%;
+  width: 20%;
   display: flex;
   flex-direction: column;
-  left: 2%;
-  top: 2%;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  gap: 3%;
+  padding: 1%;
 }
 
-.contents {
-  height: 90%;
-  flex-direction: row;
-  display: flex;
-  overflow: scroll;
-  color: black;
-
+.imagebox {
+  width: 70%;
 }
 
-.topBar {
-  display: flex;
-  flex-direction: row;
-  position: sticky;
-  top: 0;
-  height: 30px;
-  padding: 10px;
-  gap: 1ch;
-  /* background-color: #282c34; */
-  background-color: rgb(219, 219, 219);
-}
-
-.circleG, .circleO, .circleR {
+.image {
+  width:100%;
+  height:100%;
+  object-fit: cover;
   border-radius: 50%;
-  width: 12px;
-  height: 12px;
 }
 
-.circleR {
-  background-color: red;
+.links {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    vertical-align: middle;
+    gap: 10px;
+  }
+
+.links a {
+    text-decoration: none;
+    transition: all 250ms ease-in-out;
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms ease-in-out;
 }
 
-.circleR:hover {
-  background-color: rgb(248, 86, 86);
+.links a:hover{
+    color: #696969;
+    transform: scale(1.1);
 }
 
-.circleO {
-  background-color: orange;
-}
-
-.circleO:hover {
-  background-color: rgb(252, 184, 57);
-}
-.circleG {
-  background-color: green;
+.github, .linkedin, .mail {
+    color: black;
+    font-size: 30px;
 }
 
 .aboutMe{
@@ -63,35 +56,7 @@
   flex-direction: column;
 }
 
-.imagebox {
-  width: 20%;
-}
-
-.image {
-  width:100%;
-  height:100%;
-  object-fit: cover;
-  border-radius: 20px;
-}
-
-.tag {
-  display: flex;
-  flex-direction: row;
-  margin: 10px;
-}
-
-.terminalPosition{
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-}
 .text{
-  color: black;
-  margin-left: 10px;
-}
-
-@media (max-width: 600px) {
-  .terminal{
-    width: 90%;
-  }
+  color:black;
+  text-align: center;
 }

@@ -1,49 +1,28 @@
 .container  {
     flex-direction: row;
     display: flex;
-    /* background-color: #282c34; */
-     backdrop-filter: blur(10px);
-    height: 50px;
+    height: 10%;
+    width: 100%;
     padding: 10px;
-    border-bottom: 1px solid #666;
-    box-shadow: 0 0 10px 1px #666;
+    gap: 5%;
     z-index: 100;
-}
-
-.timer {
-    color: white;
-}
-
-.github {
-    color: white;
-    /* color: #6e5494; */
-    font-size: 30px;
-}
-
-.linkedin {
-    color: white;
-    /* color: #0072b1; */
-    font-size: 30px;
-}
-
-.mail {
-    color: white;
-    /* color: #de5246; */
-    font-size: 30px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    vertical-align: middle;
+    /* border-bottom: 1px solid #ddd; */
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(221,221,221,1) 50%, rgba(255,255,255,1) 100%) 1;
 }
 
 .links {
     flex-direction: row;
     display: flex;
-    margin-left: auto;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    vertical-align: middle;
     gap: 10px;
   }
 
-.links a {
+.container a {
     text-decoration: none;
     transition: all 250ms ease-in-out;
     display: block;
@@ -53,7 +32,7 @@
     transition: all 250ms ease-in-out;
 }
 
-.links a:hover{
+.container a:hover{
     color: #696969;
     transform: scale(1.1);
 }

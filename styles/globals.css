@@ -7,7 +7,8 @@ body {
   margin: 0;
   font-family: 'Roboto Mono', monospace;
   /*font-family: 'Lato', sans-serif;*/
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  background-color: white;
   scroll-behavior: smooth;
 }
 
@@ -21,22 +22,5 @@ a {
   /* border: solid 1px red; */
 }
 
-
-.icons-size{
-  font-size: 25px;
-  display: none;
-}
-
-.iconsTopSection{
-  font-size: 40px;
-}
-
 @media (min-width: 600px) {
-  .icons-size{
-    font-size: 25px;
-    display: block;
-  }
-  .iconsTopSection{
-    font-size: 40px;
-  }
 }
