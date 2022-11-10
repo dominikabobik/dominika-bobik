@@ -20,7 +20,7 @@ const Travel: NextPage = () => {
   const mapRef = useRef<MapRef>(null);
   return (
     <div className={styles.container}>
-      <About />
+      <div className={styles.aboutWrapper}><About /></div>
       <div className={styles.mainWrapper}>
         <NavBar />
         <div className={styles.contentsWrapper}>

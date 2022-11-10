@@ -5,7 +5,7 @@
   width: 70%;
   padding: 5%;
   margin-bottom: 10%;
-  gap: 5%;
+  gap: 10px;
   overflow: scroll;
 }
 
@@ -45,4 +45,24 @@
   width: 50%;
   border-radius: 10px;
   margin: 2%;
+}
+
+@media  only screen and (max-width: 600px) {
+  .container{
+    overflow: visible;
+    gap: 10px;
+    width: 90%;
+    margin-bottom: 100px;
+    margin-top: 20px;
+  }
+  .title {
+    font-size: 15px;
+    color: black;
+  }
+  .date {
+    font-size: 15px;
+  }
+  .postWrapper {
+    padding: 10px;
+  }
 }

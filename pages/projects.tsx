@@ -8,7 +8,7 @@ const Projects: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <About />
+      <div className={styles.aboutWrapper}><About /></div>
       <div className={styles.mainWrapper}>
         <NavBar />
         <div className={styles.contentsWrapper}>

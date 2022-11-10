@@ -12,10 +12,11 @@ const Home: NextPage = () => {
       <title>Dominika Bobik</title>
       <body>
         <div className={styles.container}>
-          <About />
+          <div className={styles.aboutWrapper}><About /></div>
           <div className={styles.mainWrapper}>
             <NavBar />
             <div className={styles.contentsWrapper}>
+              <div className={styles.aboutWrapperMobile}><About /></div>
               <BlogContent />
             </div>
           </div>
