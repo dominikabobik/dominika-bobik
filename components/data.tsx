@@ -186,7 +186,7 @@ export interface BlogPostData {
 	title: string,
 	date: string,
 	description: string,
-	img: string
+	img?: string
 }
 
 export const blogPosts: BlogPostData[] = [
@@ -194,7 +194,7 @@ export const blogPosts: BlogPostData[] = [
 		title: '1st place in the Computing[MTU] poster session',
 		date: '10/10/22',
 		description: 'sdfskkdsjfkdjsfjksbdkjfsdfkbdfk',
-		img: '/poster.jpg'
+		img: '/posterSession.jpeg'
 	},
 	{
 		title: 'Awarded an Undergraduate Research Internship Program (URIP)',
@@ -216,12 +216,6 @@ export const travelMarkers = [
 		lat: 37.7749,
 		city: 'San Francisco',
 		country: 'USA'
-	},
-	{
-		lon: 12.4964,
-		lat: 41.9028,
-		city: 'Rome',
-		country: 'Italy'
 	},
 	{
 		lon: 2.352222,
