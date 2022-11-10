@@ -5,8 +5,8 @@ import { TravelCardLeft } from "../components/travelCardLeft"
 import { TravelCardRight } from "../components/travelCardRight"
 import styles from '../styles/travel.module.css'
 import { dataTravel, travelMarkers } from '../components/data'
-import { useRef } from "react"
-import Map, { MapRef, Marker } from 'react-map-gl';
+import { useRef, useState } from "react"
+import Map, { MapRef, Marker, Popup } from 'react-map-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import mapboxgl from 'mapbox-gl';
@@ -18,7 +18,6 @@ mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worke
 const Travel: NextPage = () => {
 
   const mapRef = useRef<MapRef>(null);
-
   return (
     <div className={styles.container}>
       <About />
@@ -44,8 +43,26 @@ const Travel: NextPage = () => {
               >
                 {
                   travelMarkers.map(marker => {
-                    return (<Marker key={marker.lon + marker.lat} longitude={marker.lon} latitude={marker.lat} color='black'>
-                    </Marker>)
+
+                    return (
+                      <Marker
+                        key={`${marker.lon}+${marker.lat}`}
+                        longitude={marker.lon}
+                        latitude={marker.lat}
+                        color='black'>
+
+                        {/* <Popup
+                          onClose={() => setShowPopup(false)}
+                          longitude={marker.lon}
+                          latitude={marker.lat}
+                          anchor="center"
+                          closeButton={true}
+                          style={{ backgroundColor: 'red', width: '50px', height: '50px' }}
+                        >
+                          {marker.city}
+                        </Popup> */}
+
+                      </Marker>)
                   })
                 }
               </Map>

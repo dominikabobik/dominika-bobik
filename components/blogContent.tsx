@@ -1,6 +1,7 @@
 import { FC } from "react"
 import styles from '../styles/blogContents.module.css'
 import { blogPosts } from "./data"
+import Image from 'next/image'
 
 export const BlogContent: FC = () => {
   return (
@@ -8,8 +9,13 @@ export const BlogContent: FC = () => {
       {blogPosts.map(post => {
         return (
           <div key={post.title} className={styles.postWrapper}>
-            <div className={styles.title}>{post.title}</div>
-            <div className={styles.date}>{post.date}</div>
+            <div className={styles.header}>
+              <div className={styles.title}>{post.title}</div>
+              <div className={styles.date}>{post.date}</div>
+            </div>
+            {post.img &&
+              <img src={`/blog${post.img}`} alt='' className={styles.image} />
+            }
           </div>
         )
       })}

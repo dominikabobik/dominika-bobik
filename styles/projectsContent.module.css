@@ -12,18 +12,14 @@
 
 .contentWrapper {
   border-radius: 10px;
-  border: black solid 1px;
+  border: #ddd solid 1px;
   padding: 5%;
   display: flex;
   flex-direction: column;
 }
 
 .contentWrapper:hover {
-/* 
-  border-radius: 10px;
-  border-width: 2px;
-  border-style: solid;
-  border-image: linear-gradient(45deg, black, #2A20AB, #A40515, black) 1; */
+  border: black solid 1px;
 }
 
 .textTitle {
