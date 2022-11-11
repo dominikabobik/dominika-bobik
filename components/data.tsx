@@ -239,6 +239,66 @@ export const travelMarkers = [
 		country: 'Poland'
 	},
 	{
+		lon: 17.7216,
+		lat: 48.3944,
+		city: 'Trnava',
+		country: 'Slovakia'
+	},
+	{
+		lon: 14.2133,
+		lat: 45.7750,
+		city: 'Postojna',
+		country: 'Slovenia'
+	},
+	{
+		lon: 10.7069,
+		lat: 35.2965,
+		city: 'El Jam',
+		country: 'Tunisia'
+	},
+	{
+		lon: 14.2681,
+		lat: 40.8518,
+		city: 'Naples',
+		country: 'Italy'
+	},
+	{
+		lon: 16.9252,
+		lat: 52.4064,
+		city: 'Poznan',
+		country: 'Poland'
+	},
+	{
+		lon: 18.0084,
+		lat: 53.1235,
+		city: 'Bydgoszcz',
+		country: 'Poland'
+	},
+	{
+		lon: 18.5984,
+		lat: 53.0138,
+		city: 'Torun',
+		country: 'Poland'
+	},
+	{
+		lon: 14.5528,
+		lat: 53.4285,
+		city: 'Szczecin',
+		country: 'Poland'
+	},
+	{
+		lon: 23.1688,
+		lat: 53.1325,
+		city: 'Bialystok',
+		country: ':Poland'
+	},
+	{
+		lon: 18.6466,
+		lat: 54.3520,
+		city: 'Gdansk',
+		country: 'Poland'
+	},
+	{
 		lon: -122.4194,
 		lat: 37.7749,
 		city: 'San Francisco',
