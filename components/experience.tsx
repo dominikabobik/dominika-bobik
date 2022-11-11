@@ -17,8 +17,10 @@ export const ExperienceContents: FC = () => {
       <div className={styles.terminalPosition}>
         <div style={{ display: "flex", flexDirection: "row" }}>
           <div className={styles.textPosition}>
-            <div>Software Engineer,</div>
-            <a href={'https://www.microsoft.com/en-us/?ql=2'} className={styles.linkPosition}>Microsoft Corporation</a>
+            <div className={styles.mobileWrapperPositions}>
+              <div>Software Engineer</div>
+              <a href={'https://www.microsoft.com/en-us/?ql=2'} className={styles.linkPosition}>Microsoft Corporation</a>
+            </div>
             <div style={{ marginLeft: 'auto' }}>2023</div>
           </div>
         </div>
@@ -31,8 +33,10 @@ export const ExperienceContents: FC = () => {
       <div className={styles.terminalPosition}>
         <div style={{ display: "flex", flexDirection: "row" }}>
           <div className={styles.textPosition}>
-            <div>Software Engineer Intern,</div>
-            <a href={'https://www.microsoft.com/en-us/?ql=2'} className={styles.linkPosition}>Microsoft Corporation</a>
+            <div className={styles.mobileWrapperPositions}>
+              <div>Software Engineer Intern</div>
+              <a href={'https://www.microsoft.com/en-us/?ql=2'} className={styles.linkPosition}>Microsoft Corporation</a>
+            </div>
             <div style={{ marginLeft: 'auto' }}>2022</div>
           </div>
         </div>
@@ -45,8 +49,10 @@ export const ExperienceContents: FC = () => {
       <div className={styles.terminalPosition}>
         <div style={{ display: "flex", flexDirection: "row" }}>
           <div className={styles.textPosition}>
-            <div>Software Engineer Intern,</div>
-            <a href={'https://www.osii.com/'} className={styles.linkPosition}>Open Systems International</a>
+            <div className={styles.mobileWrapperPositions}>
+              <div>Software Engineer Intern</div>
+              <a href={'https://www.osii.com/'} className={styles.linkPosition}>Open Systems International</a>
+            </div>
             <div style={{ marginLeft: 'auto' }}>2021</div>
           </div>
         </div>

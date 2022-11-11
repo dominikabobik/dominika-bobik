@@ -73,4 +73,10 @@
   gap: 1ch; 
 }
 
-
+@media screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: 100%;
+    width: 90%;
+    margin-top: 20px;
+}
+}

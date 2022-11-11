@@ -15,7 +15,7 @@ export const About: FC = () => {
         <img src={'/profile.jpg'} alt="" className={styles.image} />
       </div>
 
-      <div>Dominika Bobik</div>
+      <div style={{ textAlign: 'center' }}>Dominika Bobik</div>
 
       <div className={styles.links}>
         <a href="mailto:dominikabobik12@gmail.com" target={"_blank"} rel={"noreferrer"}>
