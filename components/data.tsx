@@ -9,18 +9,49 @@ export interface project {
 	technologies: string[],
 	github?: string,
 	img?: string,
-	icon: ReactNode,
+	icon?: ReactNode,
 	lang?: Lang
 }
 
 export const data: project[] = [
+	{
+		title: 'ChatApp',
+		description: 'Created a multithreaded commandline chat app, that uses UNIX sockets.',
+		technologies: ['C++'],
+		github: 'https://github.com/DomiNika-12/chatApp',
+		img: '',
+		lang: "c"
+	},
+	{
+		title: 'Huffman Encoding',
+		description: 'Wrote a program that compressed files using huffman encoding.',
+		technologies: ['C++'],
+		github: 'https://github.com/DomiNika-12/HuffmanEncoding',
+		img: '',
+		lang: "c"
+	},
+	{
+		title: 'Luhn Algorithm',
+		description: 'Wrote a program that computes checksum and validates input using Luhn algorithm',
+		technologies: ['C++'],
+		github: 'https://github.com/DomiNika-12/luhn',
+		img: '',
+		lang: "c"
+	},
+	{
+		title: 'WCE',
+		description: 'Created a website for a Wireless Communication Enterprise, student organization at Michigan Technological University.',
+		technologies: ['TypeScript', 'React', 'Next'],
+		github: 'https://github.com/DomiNika-12/wce',
+		img: '',
+		lang: "js"
+	},
 	{
 		title: 'DBank',
 		description: 'Created a commandline based banking application using Supabase as a database of choice.',
 		technologies: ['JavaScript', 'Supabase'],
 		github: 'https://github.com/DomiNika-12/dbank',
 		img: '',
-		icon: <FcLibrary />,
 		lang: "js"
 	},
 	{
@@ -29,7 +60,6 @@ export const data: project[] = [
 		technologies: ['TypeScript', 'React Native', 'Expo'],
 		github: 'https://github.com/DomiNika-12/circuits',
 		img: '/crk.png',
-		icon: <FcCrystalOscillator />,
 		lang: "js"
 	},
 	{
@@ -38,7 +68,6 @@ export const data: project[] = [
 		technologies: ['C++'],
 		github: 'https://github.com/DomiNika-12/TicTacToe',
 		img: '',
-		icon: <FcEngineering />,
 		lang: "c"
 	},
 	{
@@ -47,7 +76,6 @@ export const data: project[] = [
 		technologies: ['C#', 'Xamarin Forms', 'SQLite'],
 		github: 'https://github.com/DomiNika-12/Travel',
 		img: '',
-		icon: <FcCircuit />
 	},
 	{
 		title: 'Snowflakes',
@@ -55,7 +83,6 @@ export const data: project[] = [
 		technologies: ['Java', 'JavaFX'],
 		github: 'https://github.com/DomiNika-12/Snowflakes',
 		img: '/snowflake.jpg',
-		icon: <FcMindMap />,
 		lang: "java"
 	},
 	{
@@ -65,25 +92,25 @@ export const data: project[] = [
 		technologies: ['Android Studio', 'Java'],
 		github: 'https://github.com/DomiNika-12/Calculator',
 		img: '/calculator.jpg',
-		icon: <FcAndroidOs />
-	},
-	{
-		title: 'Robotics Systems Enterprise',
-		description: 'Worked on development and implementation of autonomous driving and leader following behavior in the 6 robot (Clearpath Jackals) convoy utilizing ROS.',
-		technologies: ['ROS', 'Python'],
-		github: 'https://rse.mtu.edu/',
-		img: '/rse.png',
-		icon: <FcChargeBattery />
-	},
-	{
-		title: 'Blue Marble Security Enterprise',
-		description: 'Worked on a team of software engineering students focusing on implementing  autonomous pathfinding into a testing robot using the Robot Operating System (ROS), utilizing C++ and Python. Provided community outreach and educated the team on circuit design and soldering techniques.',
-		technologies: ['ROS', 'C++', 'Python'],
-		github: 'https://bluemarblesecurity.eit.mtu.edu/index.php',
-		img: '/bluemarble.jpeg',
-		icon: <FcCrystalOscillator />
 	},
 ];
+
+// {
+// 	title: 'Robotics Systems Enterprise',
+// 		description: 'Worked on development and implementation of autonomous driving and leader following behavior in the 6 robot (Clearpath Jackals) convoy utilizing ROS.',
+// 			technologies: ['ROS', 'Python'],
+// 				github: 'https://rse.mtu.edu/',
+// 					img: '/rse.png',
+// 						icon: <FcChargeBattery />
+// },
+// {
+// 	title: 'Blue Marble Security Enterprise',
+// 		description: 'Worked on a team of software engineering students focusing on implementing  autonomous pathfinding into a testing robot using the Robot Operating System (ROS), utilizing C++ and Python. Provided community outreach and educated the team on circuit design and soldering techniques.',
+// 			technologies: ['ROS', 'C++', 'Python'],
+// 				github: 'https://bluemarblesecurity.eit.mtu.edu/index.php',
+// 					img: '/bluemarble.jpeg',
+// 						icon: <FcCrystalOscillator />
+// },
 
 export const skills: Record<string, string[]> = {
 	'Programming Languages': [
