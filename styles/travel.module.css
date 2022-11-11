@@ -73,4 +73,10 @@
   .aboutWrapperMobile {
     display: flex;
   }
+
+  .cardsContainer {
+    width: 90%;
+    margin-bottom: 100px;
+    margin-top: 20px;
+  }
 }
