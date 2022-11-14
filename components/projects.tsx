@@ -9,12 +9,10 @@ export const ProjectsContent: FC = () => {
     <div className={styles.container}>
       {data.map(project => {
         return (
-          <div key={project.title} className={styles.contentWrapper}>
+          <a key={project.title} className={styles.contentWrapper} href={project.github} target={"_blank"} rel={"noreferrer"}>
             <div style={{ display: "flex", flexDirection: "row", width: '100%', paddingBottom: '10px' }}>
               <div className={styles.textTitle}>{project.title}</div>
-              {project.github && <a style={{ marginLeft: 'auto' }} href={project.github} target={"_blank"} rel={"noreferrer"}>
-                <GitHubIcon className={styles.github} />
-              </a>}
+              <GitHubIcon style={{ marginLeft: 'auto' }} className={styles.github} />
             </div>
             <div className={styles.tagContents}>
               <div className={styles.textDescription}>{project.description}</div>
@@ -25,8 +23,8 @@ export const ProjectsContent: FC = () => {
                 </div>
               ))}</p>
             </div>
-          </div>)
+          </a>)
       })}
-    </div>
+    </div >
   )
 }

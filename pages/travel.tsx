@@ -26,7 +26,7 @@ const Travel: NextPage = () => {
         <div className={styles.contentsWrapper}>
           <div className={styles.cardsContainer}>
             <div className={styles.text}>
-              I love trvelling and exploring new cultures. Checkout places I have visited so far!
+              I love travelling and exploring new cultures. Checkout places I have visited so far!
             </div>
             <div className={styles.mapWrapper}>
               <Map

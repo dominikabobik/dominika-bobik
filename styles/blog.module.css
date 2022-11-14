@@ -10,10 +10,9 @@
   
 }
 
-
 .aboutWrapper {
   height: 100%;
-  width: 20%;
+  width: var(--aboutWidth);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,7 +24,7 @@
 
 .aboutWrapperMobile {
   display: none;
-  width: 70%;
+  width: var(--centerWidth);
   flex-direction: column;
   justify-content: center;
   align-items: center;
