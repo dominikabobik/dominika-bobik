@@ -1,13 +1,11 @@
 .container{
-  /* height: 100%; */
-  /* width: 20%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   justify-items: center;
   gap: 10px;
-  padding: 1%;
+  padding: 10px;
 }
 
 .imagebox {
@@ -22,33 +20,33 @@
 }
 
 .links {
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    vertical-align: middle;
-    gap: 10px;
-  }
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  vertical-align: middle;
+  gap: 10px;
+}
 
 .links a {
-    text-decoration: none;
-    transition: all 250ms ease-in-out;
-    display: block;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    transition: all 250ms ease-in-out;
+  text-decoration: none;
+  transition: all 250ms ease-in-out;
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms ease-in-out;
 }
 
 .links a:hover{
-    color: #696969;
-    transform: scale(1.1);
+  color: #696969;
+  transform: scale(1.1);
 }
 
 .github, .linkedin, .mail {
-    color: black;
-    font-size: 30px;
+  color: black;
+  font-size: 30px;
 }
 
 .aboutMe{
@@ -64,7 +62,6 @@
 @media  only screen and (max-width: 600px) {
   .container{
     overflow: visible;
-    gap: 10px;
     width: 90%;
     margin-top: 50px;
   }
