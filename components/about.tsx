@@ -12,7 +12,7 @@ export const About: FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.imagebox}>
-        <img src={'/profile.jpg'} alt="" className={styles.image} />
+        <img src={'/profile Small.jpeg'} alt="" className={styles.image} />
       </div>
 
       <div style={{ textAlign: 'center' }}>Dominika Bobik</div>
