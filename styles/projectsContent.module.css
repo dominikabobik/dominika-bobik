@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 47.5% 47.5%;
   flex-direction: column;
-  width: 70%;
+  width: var(--centerWidth);
   overflow: scroll;
   height: 100%;
   gap: 5%;
@@ -16,10 +16,12 @@
   padding: 5%;
   display: flex;
   flex-direction: column;
+  transition: all 250ms ease-in-out;
 }
 
 .contentWrapper:hover {
   border: black solid 1px;
+  transform: scale(1.05);
 }
 
 .textTitle {
@@ -28,13 +30,7 @@
 }
 
 .github {
-  transition: all 250ms ease-in-out;
   font-size: 30px;
-}
-
-.github:hover {
-  color: #5c6370;
-  transform: scale(1.1);
 }
 
 .tagContents {
