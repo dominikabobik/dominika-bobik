@@ -66,4 +66,9 @@
   .postWrapper {
     padding: 10px;
   }
+  .image {
+    width: 80%;
+    border-radius: 10px;
+    margin: 20px;
+  }
 }
