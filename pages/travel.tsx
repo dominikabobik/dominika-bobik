@@ -5,8 +5,8 @@ import { TravelCardLeft } from "../components/travelCardLeft"
 import { TravelCardRight } from "../components/travelCardRight"
 import styles from '../styles/travel.module.css'
 import { dataTravel, travelMarkers } from '../components/data'
-import { useRef, useState } from "react"
-import Map, { MapRef, Marker, Popup } from 'react-map-gl';
+import { useRef } from "react"
+import Map, { MapRef, Marker } from 'react-map-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import mapboxgl from 'mapbox-gl';

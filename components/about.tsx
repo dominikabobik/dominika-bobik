@@ -1,7 +1,5 @@
-import { FC, useEffect, useState } from "react"
-import Draggable from "react-draggable"
+import { FC } from "react"
 import { IconContext } from "react-icons"
-import { FcDocument, FcGlobe, FcGraduationCap, FcHome } from "react-icons/fc"
 import styles from "../styles/about.module.css"
 import GitHubIcon from '@mui/icons-material/GitHub';
 import MailIcon from '@mui/icons-material/Mail';
@@ -32,7 +30,10 @@ export const About: FC = () => {
       <IconContext.Provider value={{ className: "iconsTopSection" }}>
         <div className={styles.aboutMe}>
           <div className={styles.text}>
-            Software engineer based in Seattle.
+            Software Engineer
+          </div>
+          <div className={styles.text}>
+            Seattle, WA
           </div>
           {/* <div className={styles.tag}>
             <a href={'/ResumeDominikaBobik.pdf'} target={"_blank"} rel={"noreferrer"} className={styles.text}>Resume</a>

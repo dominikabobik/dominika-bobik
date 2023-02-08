@@ -1,7 +1,7 @@
 import { FC, useEffect, useState } from "react"
-import { data, Lang } from "./data";
 import styles from "../styles/projectsContent.module.css"
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { data } from "./data";
 
 export const ProjectsContent: FC = () => {
 

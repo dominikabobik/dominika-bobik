@@ -1,4 +1,3 @@
-import { FcCrystalOscillator, FcEngineering, FcAndroidOs, FcCircuit, FcChargeBattery, FcLibrary, FcMindMap } from "react-icons/fc";
 import { ReactNode } from 'react';
 
 export type Lang = "js" | "py" | "sh" | "c" | "java"
@@ -14,6 +13,30 @@ export interface project {
 }
 
 export const data: project[] = [
+	{
+		title: 'Modeler',
+		description: 'A modeling tool for the K-12 students that teaches computational thinking,',
+		technologies: ['Typescript', 'React', 'Next', 'Supabase'],
+		github: 'https://modeler-mtu.vercel.app/',
+		img: '',
+		lang: "js"
+	},
+	{
+		title: 'Wavecolor',
+		description: 'Simple app that converts the wavelenght into the corresponing color visible to human eye.',
+		technologies: ['Typescript', 'React', 'Next'],
+		github: 'https://github.com/DomiNika-12/wave-color',
+		img: '',
+		lang: "js"
+	},
+	{
+		title: 'Cookbook',
+		description: 'Created a website that collects all the recpies important to my family in one place.',
+		technologies: ['Typescript', 'React', 'Next'],
+		github: 'https://github.com/DomiNika-12/cookbook',
+		img: '',
+		lang: "js"
+	},
 	{
 		title: 'ChatApp',
 		description: 'Created a multithreaded commandline chat app, that uses UNIX sockets.',
@@ -222,6 +245,11 @@ export const blogPosts: BlogPostData[] = [
 		date: '10/10/22',
 		description: 'sdfskkdsjfkdjsfjksbdkjfsdfkbdfk',
 		img: '/posterSession(2).jpg'
+	},
+	{
+		title: 'Starting the last year of an undergraduate degree 🎓',
+		date: '8/29/22',
+		description: 'sdfskkdsjfkdjsfjksbdkjfsdfkbdfk',
 	},
 	{
 		title: 'Awarded an Undergraduate Research Internship Program (URIP)',
