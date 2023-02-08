@@ -260,6 +260,12 @@ export const blogPosts: BlogPostData[] = [
 
 export const travelMarkers = [
 	{
+		lon: -77.04,
+		lat: 38.90,
+		city: 'Washington DC',
+		country: 'USA'
+	},
+	{
 		lon: 17.03,
 		lat: 51.11,
 		city: 'Wroclaw',
