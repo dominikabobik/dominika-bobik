@@ -1,7 +1,4 @@
-import { FC, useEffect, useState } from "react"
-import Draggable from "react-draggable"
-import { IconContext } from "react-icons"
-import { FcCrystalOscillator, FcElectronics } from "react-icons/fc"
+import { FC } from "react"
 import styles from "../styles/experienceContent.module.css"
 
 export const ExperienceContents: FC = () => {

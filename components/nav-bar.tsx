@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { FC } from "react";
 import styles from "../styles/nav-bar.module.css";
 import GitHubIcon from '@mui/icons-material/GitHub';
