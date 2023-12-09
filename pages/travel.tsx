@@ -68,7 +68,7 @@ const Travel: NextPage = () => {
               </Map>
             </div>
             <div className={styles.text}>
-              Here are some shots from my adventures:
+              Here are some of my favourite shots:
             </div>
             {dataTravel.map((e, i) => {
               if (i % 2 == 0) return <TravelCardLeft key={e.title} title={e.title} time={e.time} image={`/travel/${e.image}`} />
