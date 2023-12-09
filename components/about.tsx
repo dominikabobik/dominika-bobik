@@ -19,7 +19,7 @@ export const About: FC = () => {
         <a href="mailto:dominikabobik12@gmail.com" target={"_blank"} rel={"noreferrer"}>
           <MailIcon className={styles.mail} />
         </a>
-        <a href="https://github.com/DomiNika-12" target={"_blank"} rel={"noreferrer"}>
+        <a href="https://github.com/dominikabobik" target={"_blank"} rel={"noreferrer"}>
           <GitHubIcon className={styles.github} />
         </a>
         <a href="https://www.linkedin.com/in/dominika-bobik/" target={"_blank"} rel={"noreferrer"}>
