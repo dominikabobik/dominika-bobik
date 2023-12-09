@@ -241,24 +241,36 @@ export interface BlogPostData {
 
 export const blogPosts: BlogPostData[] = [
 	{
+		title: 'Graduation - B.S. in Computer Engineering',
+		date: '4/30/23',
+		description: '',
+		img: '/graduation.jpeg'
+	},
+	{
 		title: '1st place in the Computing[MTU] poster session',
 		date: '10/10/22',
-		description: 'sdfskkdsjfkdjsfjksbdkjfsdfkbdfk',
+		description: '',
 		img: '/posterSession(2).jpg'
 	},
 	{
-		title: 'Starting the last year of an undergraduate degree 🎓',
+		title: 'Starting the last year of an undergraduate degree',
 		date: '8/29/22',
-		description: 'sdfskkdsjfkdjsfjksbdkjfsdfkbdfk',
+		description: '',
 	},
 	{
 		title: 'Awarded an Undergraduate Research Internship Program (URIP)',
 		date: '5/30/22',
-		description: 'sdfskkdsjfkdjsfjksbdkjfsdfkbdfk',
+		description: '',
 	}
 ]
 
 export const travelMarkers = [
+	{
+		lon: 21.16,
+		lat: 86.85,
+		city: 'Cancun',
+		country: 'Mexico'
+	},
 	{
 		lon: -77.04,
 		lat: 38.90,
