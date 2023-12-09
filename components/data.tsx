@@ -241,6 +241,12 @@ export interface BlogPostData {
 
 export const blogPosts: BlogPostData[] = [
 	{
+		title: 'Joined Azure Serial Console team at Microsoft',
+		date: '5/31/2023',
+		description: '',
+		img: '/ms.jpeg'
+	},
+	{
 		title: 'Graduation - B.S. in Computer Engineering',
 		date: '4/30/23',
 		description: '',
@@ -266,8 +272,20 @@ export const blogPosts: BlogPostData[] = [
 
 export const travelMarkers = [
 	{
-		lon: 21.16,
-		lat: 86.85,
+		lon: 14.50,
+		lat: 35.89,
+		city: 'Valletta',
+		country: 'Malta'
+	},
+	{
+		lon: -70.03,
+		lat: 12.52,
+		city: 'Oranjestad',
+		country: 'Aruba'
+	},
+	{
+		lon: -86.76,
+		lat: 21.08,
 		city: 'Cancun',
 		country: 'Mexico'
 	},
