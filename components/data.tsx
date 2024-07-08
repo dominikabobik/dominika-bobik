@@ -241,7 +241,7 @@ export interface BlogPostData {
 
 export const blogPosts: BlogPostData[] = [
 	{
-		title: 'Attended Cloud Native Security Conference',
+		title: 'Cloud Native Security Conference in Seattle, WA',
 		date: '6/26/2024',
 		description: '',
 		img: '/cloudnativesecurityconf.JPG'
