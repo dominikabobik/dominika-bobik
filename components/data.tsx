@@ -247,7 +247,7 @@ export const blogPosts: BlogPostData[] = [
 		img: '/cloudnativesecurityconf.JPG'
 	},
 	{
-		title: 'Microsoft Global Hackathon Executive Challenge 2023 Honoralble Mention Award',
+		title: 'Microsoft Global Hackathon Executive Challenge 2023 Honorable Mention Award',
 		date: '10/26/2023',
 		description: '',
 		img: '/hackathon.png'
