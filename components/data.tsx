@@ -241,6 +241,18 @@ export interface BlogPostData {
 
 export const blogPosts: BlogPostData[] = [
 	{
+		title: 'Attended Cloud Native Security Conference',
+		date: '6/26/2024',
+		description: '',
+		img: '/cloudnativesecurityconf.JPG'
+	},
+	{
+		title: 'Microsoft Global Hackathon Executive Challenge 2023 Honoralble Mention Award',
+		date: '10/26/2023',
+		description: '',
+		img: '/hackathon.png'
+	},
+	{
 		title: 'Joined Azure Serial Console team at Microsoft',
 		date: '5/31/2023',
 		description: '',

@@ -1,7 +1,6 @@
 import { FC } from "react"
 import styles from '../styles/blogContents.module.css'
 import { blogPosts } from "./data"
-import Image from 'next/image'
 
 export const BlogContent: FC = () => {
   return (
