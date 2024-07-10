@@ -93,7 +93,6 @@ export const data: project[] = [
 		technologies: ['Java', 'JavaFX'],
 		github: 'https://github.com/DomiNika-12/Snowflakes',
 		img: '/snowflake.jpg',
-		lang: "java"
 	},
 	{
 		title: 'Calculator App',
