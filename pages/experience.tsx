@@ -8,9 +8,9 @@ const Experience: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.aboutWrapper}><About /></div>
+      <NavBar />
       <div className={styles.mainWrapper}>
-        <NavBar />
+        <div className={styles.aboutWrapper}><About /></div>
         <div className={styles.contentsWrapper}>
           <ExperienceContents />
         </div>

@@ -270,6 +270,18 @@ export const blogPosts: BlogPostData[] = [
 
 export const travelMarkers = [
 	{
+		lon: -34.88,
+		lat: -8.06,
+		city: 'Recife',
+		country: 'Brazil'
+	},
+	{
+		lon: -43.2,
+		lat: -22.94,
+		city: 'Rio de Janeiro',
+		country: 'Brazil'
+	},
+	{
 		lon: 14.50,
 		lat: 35.89,
 		city: 'Valletta',
