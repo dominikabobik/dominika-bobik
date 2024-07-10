@@ -1,9 +1,6 @@
 import React from "react";
 import { FC } from "react";
 import styles from "../styles/nav-bar.module.css";
-import GitHubIcon from '@mui/icons-material/GitHub';
-import MailIcon from '@mui/icons-material/Mail';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export const NavBar: FC = () => {
     return (

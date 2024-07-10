@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from "react"
+import { FC } from "react"
 import styles from "../styles/projectsContent.module.css"
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { data } from "./data";
@@ -16,12 +16,12 @@ export const ProjectsContent: FC = () => {
             </div>
             <div className={styles.tagContents}>
               <div className={styles.textDescription}>{project.description}</div>
-              <p className={styles.textTerminalTech}>{project.technologies.map((t, i) => (
+              <div className={styles.textTerminalTech}>{project.technologies.map((t, i) => (
                 <div key={t} className={styles.technologiesStyling}>
                   {i !== 0 && <p>{'◆'}</p>}
                   <p>{t}</p>
                 </div>
-              ))}</p>
+              ))}</div>
             </div>
           </a>)
       })}

@@ -9,7 +9,8 @@ export const ExperienceContents: FC = () => {
       <a href={'/ResumeDominikaBobik.pdf'} target={"_blank"} rel={"noreferrer"} className={styles.resumeWrapper}>
         <div className={styles.resume}>
           Resume
-        </div></a>
+        </div>
+      </a>
 
       <div className={styles.terminalPosition}>
         <div style={{ display: "flex", flexDirection: "row" }}>
@@ -22,8 +23,6 @@ export const ExperienceContents: FC = () => {
           </div>
         </div>
         <div className={styles.tagContents}>
-          {/* <div className={styles.textTerminal}>TBA</div>
-          <p className={styles.textTerminalTech}>TBA</p> */}
         </div>
       </div>
 
