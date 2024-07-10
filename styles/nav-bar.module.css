@@ -1,7 +1,10 @@
 .container {
+  position: fixed;
+  top: 0px;
+  background-color: white;
   flex-direction: row;
   display: flex;
-  height: 10%;
+  height: 60px;
   width: 100%;
   padding: 10px;
   gap: 5%;

@@ -1,12 +1,16 @@
 .container {
   display: flex;
-  flex-direction: row;
-  height: 100vh;
-  overflow: hidden;
+  flex-direction: column;
 }
 
 .mainWrapper {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 70px;
 }
 
 .contentsWrapper {
@@ -15,6 +19,18 @@
   align-items: center;
   height: 100%;
   overflow: scroll;
+  width: 100%;
+}
+
+.aboutWrapper {
+  height: 100%;
+  width: var(--aboutWidth);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
 }
 
 .cardsContainer {
@@ -39,18 +55,6 @@
   padding: 20px;
 }
 
-
-.aboutWrapper {
-  height: 100%;
-  width: var(--aboutWidth);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  gap: 10px;
-}
-
 .aboutWrapperMobile {
   display: none;
   width: var(--centerWidth);
@@ -61,7 +65,7 @@
   gap: 10px;
 }
 
-@media  only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .aboutWrapper {
     display: none;
   }
