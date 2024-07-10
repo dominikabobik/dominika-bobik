@@ -5,8 +5,7 @@ import { TravelCardLeft } from "../components/travelCardLeft"
 import { TravelCardRight } from "../components/travelCardRight"
 import styles from '../styles/travel.module.css'
 import { dataTravel, travelMarkers } from '../components/data'
-import { useRef } from "react"
-import Map, { MapRef, Marker } from 'react-map-gl';
+import Map, { Marker } from 'react-map-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import mapboxgl from 'mapbox-gl';
@@ -17,7 +16,6 @@ mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worke
 
 const Travel: NextPage = () => {
 
-  const mapRef = useRef<MapRef>(null);
   return (
     <div className={styles.container}>
       <div className={styles.aboutWrapper}><About /></div>

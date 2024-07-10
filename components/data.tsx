@@ -1,7 +1,5 @@
 import { ReactNode } from 'react';
 
-export type Lang = "js" | "py" | "sh" | "c" | "java"
-
 export interface project {
 	title: string,
 	description: string,
@@ -9,7 +7,6 @@ export interface project {
 	github?: string,
 	img?: string,
 	icon?: ReactNode,
-	lang?: Lang
 }
 
 export const data: project[] = [
@@ -19,7 +16,6 @@ export const data: project[] = [
 		technologies: ['Typescript', 'React', 'Next', 'Supabase'],
 		github: 'https://modeler-mtu.vercel.app/',
 		img: '',
-		lang: "js"
 	},
 	{
 		title: 'Wavecolor',
@@ -27,7 +23,6 @@ export const data: project[] = [
 		technologies: ['Typescript', 'React', 'Next'],
 		github: 'https://github.com/DomiNika-12/wave-color',
 		img: '',
-		lang: "js"
 	},
 	{
 		title: 'Cookbook',
@@ -35,7 +30,6 @@ export const data: project[] = [
 		technologies: ['Typescript', 'React', 'Next'],
 		github: 'https://github.com/DomiNika-12/cookbook',
 		img: '',
-		lang: "js"
 	},
 	{
 		title: 'ChatApp',
@@ -43,7 +37,6 @@ export const data: project[] = [
 		technologies: ['C++'],
 		github: 'https://github.com/DomiNika-12/chatApp',
 		img: '',
-		lang: "c"
 	},
 	{
 		title: 'Huffman Encoding',
@@ -51,7 +44,6 @@ export const data: project[] = [
 		technologies: ['C++'],
 		github: 'https://github.com/DomiNika-12/HuffmanEncoding',
 		img: '',
-		lang: "c"
 	},
 	{
 		title: 'Luhn Algorithm',
@@ -59,7 +51,6 @@ export const data: project[] = [
 		technologies: ['C++'],
 		github: 'https://github.com/DomiNika-12/luhn',
 		img: '',
-		lang: "c"
 	},
 	{
 		title: 'WCE',
@@ -67,7 +58,6 @@ export const data: project[] = [
 		technologies: ['TypeScript', 'React', 'Next'],
 		github: 'https://github.com/DomiNika-12/wce',
 		img: '',
-		lang: "js"
 	},
 	{
 		title: 'DBank',
@@ -75,7 +65,6 @@ export const data: project[] = [
 		technologies: ['JavaScript', 'Supabase'],
 		github: 'https://github.com/DomiNika-12/dbank',
 		img: '',
-		lang: "js"
 	},
 	{
 		title: 'eeAID',
@@ -83,7 +72,6 @@ export const data: project[] = [
 		technologies: ['TypeScript', 'React Native', 'Expo'],
 		github: 'https://github.com/DomiNika-12/circuits',
 		img: '/crk.png',
-		lang: "js"
 	},
 	{
 		title: 'Tic Tac Toe',
@@ -91,7 +79,6 @@ export const data: project[] = [
 		technologies: ['C++'],
 		github: 'https://github.com/DomiNika-12/TicTacToe',
 		img: '',
-		lang: "c"
 	},
 	{
 		title: 'Travel App',
