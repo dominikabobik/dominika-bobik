@@ -5,16 +5,74 @@ import { TravelCardLeft } from "../components/travelCardLeft"
 import { TravelCardRight } from "../components/travelCardRight"
 import styles from '../styles/travel.module.css'
 import { dataTravel, travelMarkers } from '../components/data'
-import Map, { Marker } from 'react-map-gl';
+import Map, { Marker, Popup } from 'react-map-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import 'mapbox-gl/dist/mapbox-gl.css';
+import { NextPageContext } from 'next'
+import { MpSharp } from "@mui/icons-material"
 import mapboxgl from 'mapbox-gl';
 
 // @ts-ignore
 // eslint-disable-next-line import/no-webpack-loader-syntax
 mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
-const Travel: NextPage = () => {
+interface Marker {
+  lon: number
+  lat: number
+}
+
+interface Body {
+  q: string
+  limit: number
+  // proximity: string
+}
+
+Travel.getInitialProps = async (ctx: NextPageContext) => {
+  let markers: Marker[] = []
+  let reqBody: Body[] = []
+
+  travelMarkers.forEach(el => {
+    reqBody.push({ q: el.city + ', ' + el.country, limit: 1 })
+  })
+
+  const res = await fetch(`https://api.mapbox.com/search/geocode/v6/batch?access_token=${process.env.NEXT_PUBLIC_MAPBOX_GL_ACCESS_TOKEN}`, {
+    method: 'POST',
+    body: JSON.stringify(reqBody)
+  })
+  const json = await res.json()
+
+  console.log(json.batch)
+  json.batch.forEach((el: { features: { geometry: { coordinates: any } }[] }) => {
+    const coordinates = el.features[0].geometry.coordinates
+    markers.push({ lon: coordinates[0], lat: coordinates[1] })
+  })
+
+  return { markers: markers }
+}
+
+export default function Travel({ markers }: { markers: Marker[] }) {
+
+  // useEffect(() => {
+  //   mapboxgl.accessToken = 'YOUR_MAPBOX_ACCESS_TOKEN';
+
+  //   const monument = [-77.0353, 38.8895];
+  //   mapRef.current = new mapboxgl.Map({
+  //     container: mapContainerRef.current,
+  //     style: 'mapbox://styles/mapbox/light-v11',
+  //     center: monument,
+  //     zoom: 15
+  //   });
+
+  //   const popup = new mapboxgl.Popup({ offset: 25 }).setText(
+  //     'Construction on the Washington Monument began in 1848.'
+  //   );
+
+  //   new mapboxgl.Marker(markerRef.current)
+  //     .setLngLat(monument)
+  //     .setPopup(popup)
+  //     .addTo(mapRef.current);
+
+  //   return () => mapRef.current.remove();
+  // }, []);
 
   return (
     <div className={styles.container}>
@@ -40,7 +98,7 @@ const Travel: NextPage = () => {
                 attributionControl={false}
               >
                 {
-                  travelMarkers.map(marker => {
+                  markers.map(marker => {
 
                     return (
                       <Marker
@@ -50,14 +108,15 @@ const Travel: NextPage = () => {
                         color='black'>
 
                         {/* <Popup
-                          onClose={() => setShowPopup(false)}
+
+                          // onClose={() => setShowPopup(false)}
                           longitude={marker.lon}
                           latitude={marker.lat}
                           anchor="center"
                           closeButton={true}
                           style={{ backgroundColor: 'red', width: '50px', height: '50px' }}
                         >
-                          {marker.city}
+                          {marker.lon}
                         </Popup> */}
 
                       </Marker>)
@@ -78,4 +137,3 @@ const Travel: NextPage = () => {
     </div >
   )
 }
-export default Travel

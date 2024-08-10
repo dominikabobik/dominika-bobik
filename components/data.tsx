@@ -1,3 +1,4 @@
+import { count } from 'console';
 import { ReactNode } from 'react';
 
 export interface project {
@@ -227,6 +228,12 @@ export interface BlogPostData {
 
 export const blogPosts: BlogPostData[] = [
 	{
+		title: 'Microsoft Certification: Azure Fundamentals',
+		date: '8/9/2024',
+		description: '',
+		img: '/fundamentalsbadge.svg'
+	},
+	{
 		title: 'Cloud Native Security Conference in Seattle, WA',
 		date: '6/26/2024',
 		description: '',
@@ -269,6 +276,24 @@ export const blogPosts: BlogPostData[] = [
 ]
 
 export const travelMarkers = [
+	{
+		lon: 0,
+		lat: 0,
+		city: 'Portland',
+		country: 'USA'
+	},
+	{
+		lon: 0,
+		lat: 0,
+		city: 'Las Vegas',
+		country: 'USA'
+	},
+	{
+		lon: 0,
+		lat: 0,
+		city: 'New York City',
+		country: 'USA'
+	},
 	{
 		lon: -34.88,
 		lat: -8.06,
@@ -447,7 +472,7 @@ export const travelMarkers = [
 		lon: -123.1207,
 		lat: 49.2827,
 		city: 'Vancouver',
-		country: 'USA'
+		country: 'Canada'
 	},
 	{
 		lon: -118.2437,
@@ -533,12 +558,12 @@ export const travelMarkers = [
 		city: 'Treasure Island',
 		country: 'USA'
 	},
-	{
-		lon: -120.6615,
-		lat: 47.5962,
-		city: 'Leavenworth',
-		country: 'USA'
-	},
+	// {
+	// 	lon: -120.6615,
+	// 	lat: 47.5962,
+	// 	city: 'Leavenworth',
+	// 	country: 'USA'
+	// },
 	{
 		lon: 11.0457,
 		lat: 35.5024,
@@ -551,12 +576,12 @@ export const travelMarkers = [
 		city: 'Golfo Aranci',
 		country: 'Italy'
 	},
-	{
-		lon: 11.0032,
-		lat: 46.5479,
-		city: 'Santa Valburga',
-		country: 'Italy'
-	},
+	// {
+	// 	lon: 11.0032,
+	// 	lat: 46.5479,
+	// 	city: 'Santa Valburga',
+	// 	country: 'Italy'
+	// },
 	{
 		lon: 11.3426,
 		lat: 44.4949,
