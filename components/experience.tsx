@@ -19,7 +19,7 @@ export const ExperienceContents: FC = () => {
               <div>Software Engineer</div>
               <a href={'https://www.microsoft.com/en-us/?ql=2'} className={styles.linkPosition}>Microsoft Corporation</a>
             </div>
-            <div style={{ marginLeft: 'auto' }}>2023</div>
+            <div style={{ marginLeft: 'auto' }}>2023 - Present</div>
           </div>
         </div>
         <div className={styles.tagContents}>
@@ -27,9 +27,9 @@ export const ExperienceContents: FC = () => {
             <p>Working on a Cloud Consoles team that manages two Azure services: <b>Serial Console</b> and <b>Cloud Shell.</b></p>
             <p>• Designed and implemented authentication mechanism that allows 21,000+ weekly connections to the service to be made securely.</p>
             <p>• Orchestrated service deployments across 50+ regions in 3 different clouds.</p>
-            <p>• Improved service observability by setting up Prometheus metrics collection in AKS clusters along with Grafana dashboard for visualization.</p>
+            <p>• Improved service observability by setting up Prometheus metrics collection in AKS clusters along with Grafana dashboard for data visualization.</p>
             <p>• Improved service monitoring which resulted in a better service health and uptime.</p>
-            <p>• Followed best kubernetes practices and made necessary changes to the existing clusters to ensure service security.</p>
+            <p>• Followed best Kubernetes practices and made necessary changes to the existing clusters to ensure service security.</p>
             <p>• Mentored 6+ interns during Summer 2024. Provided guidance on career development.</p>
           </div>
           <p className={styles.textTerminalTech}>Rust ◆ TypeScript ◆ Python ◆ Azure ◆ Kubernetes</p>
