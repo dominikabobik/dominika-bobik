@@ -24,13 +24,8 @@ export const ExperienceContents: FC = () => {
         </div>
         <div className={styles.tagContents}>
           <div className={styles.textTerminal}>
-            <p>Working on a Cloud Consoles team that manages two Azure services: <b>Serial Console</b> and <b>Cloud Shell.</b></p>
-            <p>• Designed and implemented authentication mechanism that allows 21,000+ weekly connections to the service to be made securely.</p>
-            <p>• Orchestrated service deployments across 50+ regions in 3 different clouds.</p>
-            <p>• Improved service observability by setting up Prometheus metrics collection in AKS clusters along with Grafana dashboard for data visualization.</p>
-            <p>• Improved service monitoring which resulted in a better service health and uptime.</p>
-            <p>• Followed best Kubernetes practices and made necessary changes to the existing clusters to ensure service security.</p>
-            <p>• Mentored 6+ interns during Summer 2024. Provided guidance on career development.</p>
+            <p>Cloud Consoles Team</p>
+            <p>Working on two Azure services: <b>Azure Serial Console</b> and <b>Azure Cloud Shell.</b></p>
           </div>
           <p className={styles.textTerminalTech}>Rust ◆ TypeScript ◆ Python ◆ Azure ◆ Kubernetes</p>
         </div>
@@ -49,6 +44,7 @@ export const ExperienceContents: FC = () => {
           </div>
         </div>
         <div className={styles.tagContents}>
+          <p className={styles.textTerminal}>Windows HTTP/DNS Team</p>
           <div className={styles.textTerminal}>Created a DNS Proxy that added the DoH (DNS over HTTPS) functionality to the Windows OS increasing overall security.</div>
           <p className={styles.textTerminalTech}>C ◆ C++</p>
         </div>
