@@ -9,13 +9,15 @@
 }
 
 .imagebox {
-  width: 70%;
+  width: 20vw;
+  height: 20vw;
 }
 
 .image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  aspect-ratio: 1;
   border-radius: 50%;
 }
 
