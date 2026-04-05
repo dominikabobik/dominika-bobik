@@ -9,11 +9,6 @@ import Map, { Marker, Popup } from 'react-map-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { NextPageContext } from 'next'
 import { MpSharp } from "@mui/icons-material"
-import mapboxgl from 'mapbox-gl';
-
-// @ts-ignore
-// eslint-disable-next-line import/no-webpack-loader-syntax
-mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
 interface Marker {
   lon: number
