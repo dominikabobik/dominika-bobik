@@ -6,7 +6,7 @@ export const ExperienceContents: FC = () => {
   return (
     <div className={styles.container}>
 
-      <a href="/ResumeDominikaBobik.pdf" download className={styles.resumeWrapper}>
+      <a href="/Dominika_Bobik_Resume.pdf" download className={styles.resumeWrapper}>
         <svg className={styles.resumeIcon} width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           <path d="M12 3v12m-4-4 4 4 4-4M5 16v4a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-4" />
         </svg>
