@@ -54,7 +54,10 @@
   background-color: #fafbfc;
   color: #343b46;
   text-decoration: none;
-  transition: border-color 180ms ease, background-color 180ms ease, color 180ms ease;
+  transition:
+    border-color 180ms ease,
+    background-color 180ms ease,
+    color 180ms ease;
 }
 
 .links a:hover {
