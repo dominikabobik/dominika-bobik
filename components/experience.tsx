@@ -29,7 +29,7 @@ export const ExperienceContents: FC = () => {
             <p>Cloud Consoles Team</p>
             <p>Working on two Azure services: <b>Azure Serial Console</b> and <b>Azure Cloud Shell.</b></p>
           </div>
-          <p className={styles.textTerminalTech}>Rust ◆ TypeScript ◆ Python ◆ Azure ◆ Kubernetes</p>
+          <p className={styles.textTerminalTech}>Rust · TypeScript · Python · Azure · Kubernetes</p>
         </div>
         <div className={styles.tagContents}>
         </div>
@@ -48,7 +48,7 @@ export const ExperienceContents: FC = () => {
         <div className={styles.tagContents}>
           <p className={styles.textTerminal}>Windows HTTP/DNS Team</p>
           <div className={styles.textTerminal}>Created a DNS Proxy that added the DoH (DNS over HTTPS) functionality to the Windows OS increasing overall security.</div>
-          <p className={styles.textTerminalTech}>C ◆ C++</p>
+          <p className={styles.textTerminalTech}>C · C++</p>
         </div>
       </div>
 
@@ -67,7 +67,7 @@ export const ExperienceContents: FC = () => {
             ranging from private firms to national electric corporations. Implemented dynamic elements in
             Compass’s map software using the MapBox API while maintaining cross-platform compatibility and a
             positive user experience.</p>
-          <p className={styles.textTerminalTech}>Xamarin ◆ .NET ◆ MapBox ◆ HTML/CSS/JavaScript</p>
+          <p className={styles.textTerminalTech}>Xamarin · .NET · MapBox · HTML/CSS/JavaScript</p>
         </div>
       </div>
     </div>

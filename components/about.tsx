@@ -16,7 +16,7 @@ export const About: FC = () => {
       <div style={{ textAlign: 'center' }}>Dominika Bobik</div>
 
       <div className={styles.links}>
-        <a href="mailto:dominikabobik12@gmail.com" aria-label="Email Dominika Bobik" title="Email">
+        <a href="mailto:bobikdominika@gmail.com" aria-label="Email Dominika Bobik" title="Email">
           <MailIcon className={styles.mail} />
         </a>
         <a href="https://github.com/dominikabobik" target={"_blank"} rel={"noreferrer"} aria-label="Dominika Bobik on GitHub" title="GitHub">
@@ -33,7 +33,7 @@ export const About: FC = () => {
             Software Engineer
           </div>
           <div className={styles.text}>
-            Seattle, WA
+            Vancouver, BC
           </div>
           {/* <div className={styles.tag}>
             <a href={'/ResumeDominikaBobik.pdf'} target={"_blank"} rel={"noreferrer"} className={styles.text}>Resume</a>
