@@ -10,7 +10,7 @@
   height: 100vh;
   overflow: hidden;
   position: fixed;
-  top: 70px;
+  top: 0;
 }
 
 .contentsWrapper {
@@ -25,6 +25,9 @@
 .aboutWrapper {
   height: 100%;
   width: var(--aboutWidth);
+  flex-shrink: 0;
+  border-right: 1px solid transparent;
+  border-image: linear-gradient(to bottom, white, #ddd, white) 1;
   display: flex;
   flex-direction: column;
   justify-content: center;

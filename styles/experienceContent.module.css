@@ -16,25 +16,49 @@
 }
 
 .resumeWrapper{
-  display: flex;
+  display: inline-flex;
   align-self: center;
-  justify-self: center;
+  align-items: center;
   justify-content: center;
+  gap: 10px;
   width: fit-content;
-  padding: 1%;
-  margin-bottom: 2%;
-  border: 1px solid black;
-  border-radius: 50px;
-  transition: all 250ms ease-in-out;
+  max-width: 100%;
+  min-height: 44px;
+  padding: 10px 16px;
+  margin-bottom: 24px;
+  border: 1px solid #e2e5e9;
+  border-radius: 10px;
+  background-color: #fafbfc;
+  color: #343b46;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: border-color 180ms ease, background-color 180ms ease, color 180ms ease;
 }
 
 .resumeWrapper:hover {
-  border: 1px solid #0076d7;
+  border-color: #a5c9e8;
+  background-color: #f2f7fc;
   color: #0076d7;
-  transform: scale(1.1);
 }
-.resume:hover {
-  color: #0076d7;
+
+.resumeWrapper:focus-visible {
+  outline: 2px solid #0076d7;
+  outline-offset: 4px;
+}
+
+.resumeIcon {
+  flex-shrink: 0;
+}
+
+.resumeFormat {
+  padding-left: 10px;
+  border-left: 1px solid #e2e5e9;
+  color: #5c6370;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
 }
 
 .textTerminal{

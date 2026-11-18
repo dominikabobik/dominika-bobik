@@ -3,7 +3,25 @@ import styles from "../styles/projectsContent.module.css"
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { data } from "./data";
 
-export const ProjectsContent: FC = () => {
+export const ProjectsContent: FC<{ variant?: 'cards' | 'list' }> = ({ variant = 'cards' }) => {
+
+  if (variant === 'list') {
+    return (
+      <ul className={styles.projectList}>
+        {data.map(project => (
+          <li key={project.title} className={styles.projectListItem}>
+            {project.github ? (
+              <a className={styles.projectLink} href={project.github} target="_blank" rel="noreferrer">
+                {project.title}
+              </a>
+            ) : <span className={styles.textTitle}>{project.title}</span>}
+            <p className={styles.projectDescription}>{project.description}</p>
+            <p className={styles.projectTechnologies}>{project.technologies.join(' · ')}</p>
+          </li>
+        ))}
+      </ul>
+    )
+  }
 
   return (
     <div className={styles.container}>
